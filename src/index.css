@@ -198,7 +198,7 @@
   height: 3rem;
 }
 
-.menu_elementos {
+.menu_elementos, .sobre_nosotros {
   margin: 0 1rem; /* Espaciado reducido entre los elementos del menú */
   font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
   font-family: "Inter", sans-serif;
@@ -255,27 +255,20 @@
   margin-right: 0rem;
 }
 
-.menu_elementos:hover {
+.menu_elementos:hover, .sobre_nosotros:hover {
   color: white;
   cursor: pointer;
 }
 
 
 @media (max-width: 768px) {
-  .barra_menu {
-    flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
-    align-items: center;
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    padding: 1rem; /* Añade espacio interno */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
 
   .menu_contenedor {
     flex-direction: column; /* Alinea los elementos centrados en una columna */
     margin-top: 1rem; /* Espacio superior para separar de otros elementos */
   }
 
-  .menu_elementos {
+  .menu_elementos, .sobre_nosotros {
     font-size: 0.8rem; /* Reduce el tamaño de fuente en pantallas pequeñas */
     margin: 0.5rem 0; /* Ajusta el espaciado entre los elementos en pantallas pequeñas */
   }
@@ -302,28 +295,31 @@
   @media (max-width: 768px) {
     .barra_menu {
       display: flex;
-      font-size: 0.8rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+      font-size: 0.5rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
       position: sticky;
-      top: 0;
+      top: 0rem;
       background-color: #ffdbec;
       margin: 0;
       list-style: none;
-      padding: 0.5rem; /* Reducido para ahorrar espacio */
+      padding: 0rem; /* Reducido para ahorrar espacio */
       text-transform: uppercase;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       width: 100%; /* Barra de menú ocupa todo el ancho */
+      height: 4rem;
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.35); /* Añade sombra */
       justify-content: space-between; /* Espaciado entre los elementos de izquierda y derecha */
       border: none; /* Elimina bordes */
       border-radius: 0; /* Elimina esquinas redondeadas */
       box-sizing: border-box; /* Ajusta el ancho para que incluya el padding */
       font-style: bold;
+      gap: 0;
     }
 
     .izquierda {
-      position: relative; /* Permite que se mantenga a la izquierda */
+      position: absolute; /* Permite que se mantenga a la izquierda */
       left: 0.5rem; /* Ajusta el margen izquierdo para dispositivos móviles */
       margin-top: -1rem;
+      display: none;
     }
 
     .logo{
@@ -337,20 +333,35 @@
       display: flex;
       justify-content: center; /* Centra el contenido del menú */
       flex: 1; /* Ocupa el espacio restante entre izquierda y derecha */
-      max-width: 100%; /* Evita que el menú se salga del contenedor */
-      overflow-x: hidden; /* Oculta el contenido que se sale del contenedor */
+      max-width:100%; /* Evita que el menú se salga del contenedor */
+      align-items: center;
+    }
+
+    .centrado{
+      justify-content: center; 
+      align-items: center;
+      padding-right: 1.5rem;
+    }
+
+    .sobre_nosotros {
+      margin: 0 auto;
+      text-align: center;
     }
 
     .derecha {
       position: absolute; /* Permite que se mantenga a la derecha */
-      right: 0.5rem; /* Ajusta el margen derecho para dispositivos móviles */
+      margin-right: 10rem; /* Ajusta el margen derecho para dispositivos móviles */
+      margin-top: -2rem;
     }
 
-    .menu_elementos {
+    .menu_elementos, .sobre_nosotros {
       display: flex;
+      font-size: 0.65rem;
       justify-content: center;
       align-items: center;
-      padding: 0 0.5rem 0 0.5rem;
+      padding: 0.5rem;
+      padding-top: 0;
+      padding-bottom: 0;
       flex-wrap: wrap; /* Ajusta los elementos del menú al ancho del contenedor */
     }
     
