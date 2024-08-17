@@ -106,6 +106,48 @@
 
 
 /*****Header*****/
+
+/************ Adaptaciones para dispositivos móviles ************/
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contenedor_productos_carrito {
+    padding: 0.5rem;
+  }
+
+  .producto_carrito {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .producto_carrito img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+  }
+
+  .producto_carrito .detalles_producto {
+    margin-left: 0;
+  }
+
+  .producto_carrito .precio_producto {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .producto_carrito .boton_eliminar {
+    align-self: flex-end;
+  }
+}
+
 .barra_menu {
   display: flex;
   font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
@@ -233,11 +275,6 @@
     margin-top: 1rem; /* Espacio superior para separar de otros elementos */
   }
 
-  .izquierda, .derecha {
-    flex-direction: column; /* Alinea los elementos a la izquierda y derecha en una columna */
-    margin: 0; /* Elimina el margen para pantallas pequeñas */
-  }
-
   .menu_elementos {
     font-size: 0.8rem; /* Reduce el tamaño de fuente en pantallas pequeñas */
     margin: 0.5rem 0; /* Ajusta el espaciado entre los elementos en pantallas pequeñas */
@@ -263,58 +300,69 @@
   }
 
   @media (max-width: 768px) {
-    .iconos_superior_derecha {
-      right: 0.5rem; /* Ajusta el margen derecho para dispositivos móviles */
-      top: 0.5rem; /* Ajusta el margen superior para dispositivos móviles */
-      gap: 0.5rem; /* Espaciado reducido entre los íconos para pantallas pequeñas */
+    .barra_menu {
+      display: flex;
+      font-size: 0.8rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+      position: sticky;
+      top: 0;
+      background-color: #ffdbec;
+      margin: 0;
+      list-style: none;
+      padding: 0.5rem; /* Reducido para ahorrar espacio */
+      text-transform: uppercase;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      width: 100%; /* Barra de menú ocupa todo el ancho */
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.35); /* Añade sombra */
+      justify-content: space-between; /* Espaciado entre los elementos de izquierda y derecha */
+      border: none; /* Elimina bordes */
+      border-radius: 0; /* Elimina esquinas redondeadas */
+      box-sizing: border-box; /* Ajusta el ancho para que incluya el padding */
+      font-style: bold;
     }
   
-    .iconos_superior_derecha .bx {
-      font-size: 1.2rem; /* Ajusta el tamaño de los íconos en pantallas pequeñas */
+    .izquierda {
+      position: relative; /* Permite que se mantenga a la izquierda */
+      left: 0.5rem; /* Ajusta el margen izquierdo para dispositivos móviles */
+      margin-top: -1rem;
+    }
+
+    .logo{
+      margin-left: 13rem;
+      position: relative;
+      display: flex;
+      font-size: 2rem;
+    }
+  
+    .menu_contenedor {
+      display: flex;
+      justify-content: center; /* Centra el contenido del menú */
+      flex: 1; /* Ocupa el espacio restante entre izquierda y derecha */
+    }
+  
+    .derecha {
+      position: absolute; /* Permite que se mantenga a la derecha */
+      right: 0.5rem; /* Ajusta el margen derecho para dispositivos móviles */
+    }
+
+    .menu_elementos{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0.5rem 0 0.5rem ;
     }
   }
+  
 
-  .header1 {
-    height: auto; /* Permite que la altura se ajuste al contenido */
-    padding: 1rem; /* Añade espacio interno */
-    margin-top: 0; /* Elimina el margen superior */
   }
 
-  .texto_header {
-    font-size: 2rem; /* Reduce el tamaño de la fuente para pantallas pequeñas */
-    text-align: center; /* Centra el texto */
-  }
 
-  .bolsaheader {
-    height: 200px; /* Ajusta la altura de la imagen */
-    width: 100%; /* Ocupa el 100% del ancho disponible */
-    margin: 0 auto; /* Centra la imagen */
-    border: none; /* Elimina el borde */
-  }
 
-  .columna_header {
-    flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
-    gap: 0.5rem; /* Reduce el espacio entre los elementos */
-  }
 
-  .bolsas {
-    font-size: 2.5rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
-    text-align: center; /* Centra el texto */
-  }
 
-  .precio {
-    font-size: 3rem; /* Ajusta el tamaño de fuente del precio */
-  }
 
-  .nuevas, .por_solo, .precio {
-    text-align: center; /* Centra todos los textos */
-  }
 
-  .numero-superior {
-    margin-top: 1rem; /* Ajusta la posición del número superior */
-    font-size: 0.6rem; /* Reduce el tamaño del número */
-  }
-}
+
+
 
 /*********** HEADER **********/
 Header {
