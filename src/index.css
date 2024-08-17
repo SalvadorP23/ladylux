@@ -260,7 +260,7 @@
   cursor: pointer;
 }
 
-/* Media Queries para pantallas pequeñas */
+
 @media (max-width: 768px) {
   .barra_menu {
     flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
@@ -319,7 +319,7 @@
       box-sizing: border-box; /* Ajusta el ancho para que incluya el padding */
       font-style: bold;
     }
-  
+
     .izquierda {
       position: relative; /* Permite que se mantenga a la izquierda */
       left: 0.5rem; /* Ajusta el margen izquierdo para dispositivos móviles */
@@ -332,29 +332,30 @@
       display: flex;
       font-size: 2rem;
     }
-  
+
     .menu_contenedor {
       display: flex;
       justify-content: center; /* Centra el contenido del menú */
       flex: 1; /* Ocupa el espacio restante entre izquierda y derecha */
+      max-width: 100%; /* Evita que el menú se salga del contenedor */
+      overflow-x: hidden; /* Oculta el contenido que se sale del contenedor */
     }
-  
+
     .derecha {
       position: absolute; /* Permite que se mantenga a la derecha */
       right: 0.5rem; /* Ajusta el margen derecho para dispositivos móviles */
     }
 
-    .menu_elementos{
+    .menu_elementos {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0 0.5rem 0 0.5rem ;
+      padding: 0 0.5rem 0 0.5rem;
+      flex-wrap: wrap; /* Ajusta los elementos del menú al ancho del contenedor */
     }
+    
   }
-  
-
-  }
-
+}
 
 
 
