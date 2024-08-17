@@ -946,11 +946,60 @@ main {
   cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Queries */
 @media (max-width: 768px) {
-  .contenedor_productos_megusta {
-    grid-template-columns: 1fr;
+
+  .contenedor_productos {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    padding: 1rem;
+    font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-variant: normal;
+    margin-top: -0.5rem;
+    justify-items: center; /* Centra los items horizontalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-left: -1.5rem;
   }
+  
+
+
+
+/*Header promociones*/
+  .header1{
+  display: none;
+}
+
 
   .producto_megusta {
     height: auto; /* Ajusta la altura según el contenido */
