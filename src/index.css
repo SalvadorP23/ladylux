@@ -1027,6 +1027,8 @@ main {
 
   .contenedor_productos {
     gap: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .imagen_contenedor{
