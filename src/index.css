@@ -1013,6 +1013,9 @@ main {
 }
 
 
+
+
+/*Catalogo inico*/
   .producto_megusta {
     height: auto; /* Ajusta la altura según el contenido */
   }
@@ -1027,8 +1030,7 @@ main {
 
   .contenedor_productos {
     gap: 1.5rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    margin:0 1rem 0 1rem;
   }
 
   .imagen_contenedor{
@@ -1041,6 +1043,52 @@ main {
   .color_producto{
     display: none;
   }
+
+
+  /*Detalle Productos*/
+
+  .detalle-producto-descripcion{
+    display: none;
+  }
+
+  .detalle-producto-imagen {
+    width: 100%; /* ocupa el 100% de la anchura */
+    height: 90vh; /* ocupa el 90% de la altura vertical */
+    object-fit: cover; /* ajusta la imagen para que se adapte al contenedor */
+    margin-top: -30rem;
+  }
+
+  .carousel .slider-wrapper {
+    height: 90%; /* El carrusel ocupa el 90% de la pantalla */
+  }
+
+  .carousel .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Asegura que las imágenes ocupen todo el espacio disponible */
+  }
+
+  .carousel .control-dots {
+    position: absolute;
+    bottom: 12%; /* Coloca los puntitos justo por encima del título */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .carousel .dot {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+
+  .detalle-producto-titulo{
+  }
+
 
 }
 
