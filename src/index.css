@@ -273,13 +273,9 @@
     margin: 0.5rem 0; /* Ajusta el espaciado entre los elementos en pantallas pequeñas */
   }
 
-  .logo {
-    max-width: 80%; /* Ajusta el tamaño del logo para pantallas pequeñas */
-    margin: 0 auto; /* Centra el logo */
-  }
-
   @media (max-width: 768px) {
     .logo {
+      margin-left: 2rem;
       max-width: 10%; /* Ajusta el tamaño máximo del logo para pantallas pequeñas */
       height: auto; /* Mantiene la proporción del logo */
       margin-left: 0; /* Elimina el margen izquierdo para alinear a la izquierda */
@@ -291,7 +287,6 @@
     font-size: 1.2rem; /* Reduce el tamaño de los iconos en pantallas pequeñas */
     margin-right: 0; /* Ajusta el margen en pantallas pequeñas */
   }
-
   @media (max-width: 768px) {
     .barra_menu {
       display: flex;
@@ -313,58 +308,75 @@
       box-sizing: border-box; /* Ajusta el ancho para que incluya el padding */
       font-style: bold;
       gap: 0;
+      margin-left: 1rem;
     }
-
+  
     .izquierda {
-      position: absolute; /* Permite que se mantenga a la izquierda */
-      left: 0.5rem; /* Ajusta el margen izquierdo para dispositivos móviles */
-      margin-top: -1rem;
-      display: none;
+      position: relative; /* Cambia de absolute a relative para mejor control del posicionamiento */
+      margin: 0 0.5rem;
+      display: none; /* Mantener oculto en pantallas pequeñas */
     }
-
-    .logo{
-      margin-left: 13rem;
+  
+    .logo {
+      margin-left: auto; /* Centrará el logo */
       position: relative;
       display: flex;
       font-size: 2rem;
     }
-
+  
     .menu_contenedor {
+      position: relative; /* Agrega position: relative al contenedor */
       display: flex;
-      justify-content: center; /* Centra el contenido del menú */
-      flex: 1; /* Ocupa el espacio restante entre izquierda y derecha */
-      max-width:100%; /* Evita que el menú se salga del contenedor */
+      justify-content: center;
+      flex: 1;
+      max-width: 100%;
       align-items: center;
+      overflow: hidden;
+      flex-wrap: nowrap;
     }
 
-    .centrado{
-      justify-content: center; 
+    .centrado {
+      justify-content: center;
       align-items: center;
       padding-right: 1.5rem;
     }
-
+    .iconos_menu {
+      position: absolute;
+      top: 2.5rem; /* Ajusta este valor según sea necesario */
+      left: -3.8rem; /* Mantén este valor para que esté pegado a la izquierda */
+      font-size: 1.5rem
+    }
+    
+  
     .sobre_nosotros {
       margin: 0 auto;
       text-align: center;
     }
-
+  
+  
     .derecha {
-      position: absolute; /* Permite que se mantenga a la derecha */
-      margin-right: 10rem; /* Ajusta el margen derecho para dispositivos móviles */
-      margin-top: -2rem;
+      position: absolute; /* Establece position: absolute a los elementos .derecha */
+      left: -5rem; /* Posiciona los elementos .derecha a la izquierda del contenedor */
+      margin: 0 0.5rem;
+      margin-top: -1rem;
     }
-
+  
     .menu_elementos, .sobre_nosotros {
       display: flex;
       font-size: 0.65rem;
       justify-content: center;
       align-items: center;
-      padding: 0.5rem;
+      padding: 0.1rem;
       padding-top: 0;
       padding-bottom: 0;
-      flex-wrap: wrap; /* Ajusta los elementos del menú al ancho del contenedor */
+      flex-wrap: nowrap; /* Asegura que los elementos se mantengan en una línea */
+      margin: 0 0.5rem; /* Ajusta el margen para optimizar espacio */
     }
-    
+  
+    .iconos_barra, .iconos_barra2 {
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
   }
 }
 

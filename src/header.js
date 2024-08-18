@@ -28,8 +28,7 @@ const Header = () => {
               <li className='menu_elementos'>
                 <a href="#productos" onClick={(e) => scrollToSection(e, 'productos')}>Catálogo</a>
               </li>
-              <li className='sobre_nosotros'><Link to="/sobre-nosotros">Sobre 
-              nosotros</Link>
+              <li className='sobre_nosotros'><Link to="/sobre-nosotros">Sobre nosotros</Link>
               </li>
               <HeaderOption 
                 label="Contactos"
@@ -45,9 +44,14 @@ const Header = () => {
             <li className='iconos_barra'>
               <Link to="/carritouno">
                 <i className='bx bx-heart'></i>
-              </Link>              
+              </Link>
             </li>
           </div>
+          <div className='iconos_menu'>
+              <Link to="/carritouno">
+                <i className='bx bx-heart'></i>
+              </Link>
+            </div>
         </ul>
       </nav>
     </header>
