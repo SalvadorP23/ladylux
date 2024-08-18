@@ -214,6 +214,13 @@
   margin-left: auto; /* Empuja los elementos de la derecha hacia la derecha */
 }
 
+.izquierda {
+  display: flex;
+  gap: 0.5rem; /* Espaciado reducido para pantallas pequeñas */
+  margin-right: auto; /* Empuja los elementos de la izquierda hacia la izquierda */
+  height: 3rem;
+}
+
 
 .menu_contenedor a {
   text-decoration: none; /* Quita el subrayado de los enlaces */
@@ -317,14 +324,14 @@
   
     .izquierda {
       position: absolute; /* Cambia de absolute a relative para mejor control del posicionamiento */
-      width: 20rem;
+      margin: 0 0.5rem;
+      width: 5rem;
     }
   
     .logo {
+      right: 2rem; /* Centrará el logo */
       position: absolute;
       display: flex;
-      right: -1.5rem;
-      top: -1rem;
     }
   
     .menu_contenedor {
@@ -368,12 +375,27 @@
       margin-top: -1rem;
     }
   
+    .izquierda {
+      position: absolute; /* Cambia de absolute a relative para mejor control del posicionamiento */
+      width: 20rem;
+    }
+  
+    .logo {
+      position: absolute;
+      display: flex;
+      right: -1.5rem;
+      top: 0.3rem;
+    }
 
     .iconos_barra, .iconos_barra2 {
       font-size: 1.5rem;
       margin-left: 0.5rem;
     }
 }
+
+
+
+
 
 
 
