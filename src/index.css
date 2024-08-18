@@ -99,6 +99,139 @@
   align-items: center;
   justify-content: center;
 }
+/************ Carrito para móviles ************/
+@media (max-width: 768px) {
+  .carrito_vacio, .carrito_comprado {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto para móviles si es necesario */
+  }
+
+  .carrito-container {
+    padding: 0.5rem;
+  }
+
+  .contenedor_productos_carrito {
+    padding: 0.5rem;
+  }
+
+  .producto_carrito {
+    flex-direction: column; /* Muestra los productos en una columna en lugar de fila */
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre los elementos del producto */
+  }
+
+  .producto_imagen_carrito {
+    height: 100px; /* Ajusta la altura de la imagen para móviles */
+    width: 100px; /* Ajusta el tamaño de la imagen para móviles */
+    margin-bottom: 0.5rem; /* Añade espacio debajo de la imagen */
+  }
+
+  .contenedor_productos_texto_carrito {
+    flex-direction: column; /* Cambia la dirección a columna para los textos */
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre los textos */
+  }
+
+  .producto_titulo_carrito_producto,
+  .producto_titulo_carrito,
+  .color_producto_carrito,
+  .producto_precio_carrito,
+  .producto_precio_carrito_precio {
+    text-align: center; /* Alinea todo el texto al centro */
+    margin: 0.2rem; /* Espacio entre los elementos de texto */
+    width: auto; /* Ajusta el ancho para que se adapte al contenido */
+  }
+
+  .fila_producto_carrito {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna si no caben en una fila */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem; /* Espacio entre los elementos */
+  }
+
+  .boton_trashdos {
+    font-size: 1.5rem; /* Ajusta el tamaño del ícono de basura para móviles */
+  }
+}
+
+/************ Adaptación para móviles ************/
+@media (max-width: 768px) {
+  .carrito_vacio, .carrito_comprado {
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente para móviles */
+    padding: 0.5rem; /* Reduce el padding para ahorrar espacio */
+  }
+
+  .carrito-container {
+    padding: 0.5rem; /* Reduce el padding para móviles */
+  }
+
+  .contenedor_productos_carrito {
+    padding: 0; /* Elimina el padding adicional */
+  }
+
+  .producto_carrito {
+    display: flex;
+    flex-direction: row; /* Mantiene los elementos en fila */
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fae1ed6a;
+    border-radius: 1rem;
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
+  }
+
+  .producto_imagen_carrito {
+    height: 80px; /* Ajusta la altura de la imagen */
+    width: 80px; /* Ajusta el ancho de la imagen */
+    object-fit: cover; /* Ajusta el contenido de la imagen para que cubra el área del contenedor */
+    margin-right: 1rem; /* Mantiene el margen derecho */
+  }
+
+  .contenedor_productos_texto_carrito {
+    flex: 1; /* Permite que el contenedor de texto ocupe el espacio restante */
+    display: flex;
+    flex-direction: column; /* Cambia a columna en lugar de fila */
+    gap: 0.5rem; /* Añade espacio entre los elementos */
+  }
+
+  .producto_titulo_carrito_producto,
+  .producto_titulo_carrito,
+  .color_producto_carrito,
+  .producto_precio_carrito,
+  .producto_precio_carrito_precio {
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    text-align: center; /* Cambia la alineación del texto */
+    margin: 0; /* Elimina el margen para evitar el desbordamiento */
+    padding: 0 0.6rem 0 0.6rem;
+  }
+
+  .fila_producto_carrito {
+    display: flex;
+    flex-direction: row; /* Mantiene los elementos en fila */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente fila si no caben */
+    gap: 0.5rem; /* Añade espacio entre los elementos */
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  }
+
+  .boton_trashdos {
+    font-size: 1.5rem; /* Ajusta el tamaño del botón */
+    color: blue; /* Cambia el color del botón */
+    margin: 0.5rem 0; /* Añade margen para separar del resto de los elementos */
+  }
+
+  .boton_trashdos .icono_basura {
+    font-size: 1.5rem; /* Ajusta el tamaño del ícono de la basura */
+  }
+
+  .boton_trashdos .icono_basura:hover {
+    color: red; /* Cambia el color al pasar el mouse */
+  }
+}
 
 
 
@@ -959,6 +1092,46 @@ main {
 }
 
 
+/*** Adaptación para móviles ***/
+@media (max-width: 768px) {
+  .titulo_megusta {
+    font-size: 2rem; /* Tamaño de fuente ajustado para móviles */
+    padding-left: 1rem; /* Espacio interno ajustado */
+    padding-right: 1rem; /* Espacio interno ajustado */
+    border-radius: 5rem; /* Bordes redondeados más pequeños */
+  }
+
+  .contenedor_productos_megusta {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para dispositivos móviles */
+    gap: 1.5rem; /* Espacio entre los productos */
+    padding: 0 1rem; /* Espacio interno en los lados del contenedor */
+  }
+
+  .producto_megusta {
+    max-width: 100%; /* Ajusta el ancho al contenedor */
+    min-height: auto; /* Permite que la altura se ajuste automáticamente */
+    padding: 0.5rem; /* Espacio interno reducido */
+  }
+
+  .producto_imagen_megusta {
+    height: 200px; /* Altura fija para la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste dentro del contenedor sin perder proporción */
+  }
+
+  .producto_texto_megusta {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .producto_titulo_megusta {
+    font-size: 1.2rem; /* Tamaño de fuente ajustado */
+  }
+
+  .producto_precio_megusta {
+    font-size: 0.9rem; /* Tamaño de fuente ajustado */
+  }
+}
+
 
 
 
@@ -1001,7 +1174,6 @@ main {
     margin-top: -0.5rem;
     justify-items: center; /* Centra los items horizontalmente */
     justify-content: center; /* Centra el contenido horizontalmente */
-    margin-left: -1.5rem;
   }
   
 
@@ -1029,8 +1201,7 @@ main {
   }
 
   .contenedor_productos {
-    gap: 1.5rem;
-    margin:0 1rem 0 1rem;
+    gap: .8rem;
   }
 
   .imagen_contenedor{
@@ -1175,6 +1346,60 @@ main {
   border-top-right-radius:1.5rem ;
   border-bottom-right-radius:1.5rem ;
 }
+
+/* Adaptación para móviles */
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+  .info-window {
+    position: fixed;
+    top: 2.5rem;
+    left: 3rem;
+    width: 15rem; /* Ancho fijo de la ventana */
+    padding: 1rem;
+    display: block; /* Siempre visible en móviles */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para mejor visibilidad */
+    border-radius: 1.5rem; /* Bordes redondeados */
+    background-color: rgba(255, 219, 236, 0.922);
+    overflow: hidden; /* Evita desbordamientos */
+  }
+
+  .contacto_fila {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem; /* Espacio entre los cuadros */
+  }
+
+  .boton_contactos {
+    background-color: #fe67cc; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Quitar el borde */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    align-items: center; /* Alinear los íconos verticalmente en el centro */
+    justify-content: center; /* Alinear los íconos horizontalmente en el centro */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border-top-left-radius: 1.5rem; /* Bordes redondeados */
+  }
+
+  .boton_contactos i {
+    font-size: 2rem; /* Tamaño del ícono ajustado para móviles */
+    color: f5f5f5;
+  }
+
+  .texto_contactos {
+    flex: 1; /* Ocupa el espacio restante en la fila */
+    font-size: 1rem; /* Tamaño de fuente del texto */
+    background-color: #f5f5f5; /* Color de fondo del texto */
+    border-top-right-radius: 1.5rem; /* Bordes redondeados */
+    display: flex;
+    align-items: center; /* Alinea el texto verticalmente */
+    justify-content: center; /* Alinea el texto horizontalmente */
+    color: rgb(252, 206, 214);
+  }
+}
+
+
+
 
 
 
