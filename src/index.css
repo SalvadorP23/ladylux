@@ -372,7 +372,7 @@
       position: absolute; /* Establece position: absolute a los elementos .derecha */
       left: -5rem; /* Posiciona los elementos .derecha a la izquierda del contenedor */
       margin: 0 0.5rem;
-      margin-top: -1rem;
+      margin-top: 0.3rem;
     }
   
     .izquierda {
@@ -383,7 +383,7 @@
     .logo {
       position: absolute;
       display: flex;
-      right: -1.5rem;
+      right: 1.5rem;
       top: 0.3rem;
     }
 
