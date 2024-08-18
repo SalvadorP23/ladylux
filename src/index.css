@@ -105,7 +105,30 @@
 
 
 
-/*****Header*****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /************ Adaptaciones para dispositivos móviles ************/
 @media (max-width: 768px) {
@@ -191,13 +214,6 @@
   margin-left: auto; /* Empuja los elementos de la derecha hacia la derecha */
 }
 
-.izquierda {
-  display: flex;
-  gap: 0.5rem; /* Espaciado reducido para pantallas pequeñas */
-  margin-right: auto; /* Empuja los elementos de la izquierda hacia la izquierda */
-  height: 3rem;
-}
-
 
 .menu_contenedor a {
   text-decoration: none; /* Quita el subrayado de los enlaces */
@@ -247,9 +263,6 @@
   cursor: pointer;
 }
 
-
-@media (max-width: 768px) {
-
   .menu_contenedor {
     flex-direction: column; /* Alinea los elementos centrados en una columna */
     margin-top: 1rem; /* Espacio superior para separar de otros elementos */
@@ -260,6 +273,7 @@
     margin: 0.5rem 0; /* Ajusta el espaciado entre los elementos en pantallas pequeñas */
     justify-content: space-between;
     padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 
   @media (max-width: 768px) {
@@ -270,14 +284,14 @@
       margin-left: 0; /* Elimina el margen izquierdo para alinear a la izquierda */
       margin-right: auto; /* Asegura que el logo se alinee a la izquierda */
     }
-  }
+
 
   .iconos_barra, .iconos_barra2 {
     font-size: 1.2rem; /* Reduce el tamaño de los iconos en pantallas pequeñas */
     margin-right: 0; /* Ajusta el margen en pantallas pequeñas */
   }
-  @media (max-width: 768px) {
-    .barra_menu {
+
+  .barra_menu {
       display: flex;
       font-size: 0.5rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
       position: relative;
@@ -289,7 +303,7 @@
       text-transform: uppercase;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       width: 100%; /* Barra de menú ocupa todo el ancho */
-      height: 4rem;
+      height: 2rem;
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.35); /* Añade sombra */
       justify-content: space-between; /* Espaciado entre los elementos de izquierda y derecha */
       border: none; /* Elimina bordes */
@@ -302,16 +316,15 @@
     }
   
     .izquierda {
-      position: relative; /* Cambia de absolute a relative para mejor control del posicionamiento */
-      margin: 0 0.5rem;
-      display: none; /* Mantener oculto en pantallas pequeñas */
+      position: absolute; /* Cambia de absolute a relative para mejor control del posicionamiento */
+      width: 20rem;
     }
   
     .logo {
-      margin-left: auto; /* Centrará el logo */
-      position: relative;
+      position: absolute;
       display: flex;
-      font-size: 2rem;
+      right: -1.5rem;
+      top: -1rem;
     }
   
     .menu_contenedor {
@@ -332,6 +345,8 @@
       align-items: center;
       padding-right: 1.5rem;
     }
+
+
     .iconos_menu {
       position: absolute;
       top: 2.5rem; /* Ajusta este valor según sea necesario */
@@ -352,13 +367,12 @@
       margin: 0 0.5rem;
       margin-top: -1rem;
     }
-
   
+
     .iconos_barra, .iconos_barra2 {
       font-size: 1.5rem;
       margin-left: 0.5rem;
     }
-  }
 }
 
 
