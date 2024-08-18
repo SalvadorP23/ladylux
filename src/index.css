@@ -198,19 +198,6 @@
   height: 3rem;
 }
 
-.menu_elementos, .sobre_nosotros {
-  margin: 0 1rem; /* Espaciado reducido entre los elementos del menú */
-  font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-  text-decoration: none; /* Quita el subrayado de los enlaces */
-  color: inherit; /* Hereda el color del texto del elemento padre */
-  margin-top: 1rem;
-}
 
 .menu_contenedor a {
   text-decoration: none; /* Quita el subrayado de los enlaces */
@@ -269,8 +256,10 @@
   }
 
   .menu_elementos, .sobre_nosotros {
-    font-size: 0.8rem; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    font-size: 0.6rem; /* Reduce el tamaño de fuente en pantallas pequeñas */
     margin: 0.5rem 0; /* Ajusta el espaciado entre los elementos en pantallas pequeñas */
+    justify-content: space-between;
+    padding-right: 0.5rem;
   }
 
   @media (max-width: 768px) {
@@ -291,7 +280,7 @@
     .barra_menu {
       display: flex;
       font-size: 0.5rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-      position: sticky;
+      position: relative;
       top: 0rem;
       background-color: #ffdbec;
       margin: 0;
@@ -309,6 +298,7 @@
       font-style: bold;
       gap: 0;
       margin-left: 1rem;
+      flex-wrap: wrap;
     }
   
     .izquierda {
@@ -333,6 +323,8 @@
       align-items: center;
       overflow: hidden;
       flex-wrap: nowrap;
+      margin: 0 auto; /* Centra el contenedor horizontalmente */
+      padding: 0 1rem; /* Agrega padding para separar los elementos del borde */
     }
 
     .centrado {
@@ -360,18 +352,7 @@
       margin: 0 0.5rem;
       margin-top: -1rem;
     }
-  
-    .menu_elementos, .sobre_nosotros {
-      display: flex;
-      font-size: 0.65rem;
-      justify-content: center;
-      align-items: center;
-      padding: 0.1rem;
-      padding-top: 0;
-      padding-bottom: 0;
-      flex-wrap: nowrap; /* Asegura que los elementos se mantengan en una línea */
-      margin: 0 0.5rem; /* Ajusta el margen para optimizar espacio */
-    }
+
   
     .iconos_barra, .iconos_barra2 {
       font-size: 1.5rem;
