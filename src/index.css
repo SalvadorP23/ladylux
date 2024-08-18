@@ -292,12 +292,6 @@
       margin-right: auto; /* Asegura que el logo se alinee a la izquierda */
     }
 
-
-  .iconos_barra, .iconos_barra2 {
-    font-size: 1.2rem; /* Reduce el tamaño de los iconos en pantallas pequeñas */
-    margin-right: 0; /* Ajusta el margen en pantallas pequeñas */
-  }
-
   .barra_menu {
       display: flex;
       font-size: 0.5rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
@@ -321,19 +315,7 @@
       margin-left: 1rem;
       flex-wrap: wrap;
     }
-  
-    .izquierda {
-      position: absolute; /* Cambia de absolute a relative para mejor control del posicionamiento */
-      margin: 0 0.5rem;
-      width: 5rem;
-    }
-  
-    .logo {
-      right: 2rem; /* Centrará el logo */
-      position: absolute;
-      display: flex;
-    }
-  
+    
     .menu_contenedor {
       position: relative; /* Agrega position: relative al contenedor */
       display: flex;
@@ -372,11 +354,12 @@
       position: absolute; /* Establece position: absolute a los elementos .derecha */
       left: -5rem; /* Posiciona los elementos .derecha a la izquierda del contenedor */
       margin: 0 0.5rem;
-      margin-top: 0.3rem;
+      margin-top: 0.8rem;
     }
   
     .izquierda {
       position: absolute; /* Cambia de absolute a relative para mejor control del posicionamiento */
+      margin: 0 0.5rem;
       width: 20rem;
     }
   
@@ -1037,13 +1020,29 @@ main {
   .producto_imagen_megusta {
     height: 120px; /* Ajusta según sea necesario */
   }
+
+  .filtro_contenedor{
+    margin-top: -7rem;
+  }
+
+  .contenedor_productos {
+    gap: 1.5rem;
+  }
+
+  .imagen_contenedor{
+    width: 10rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .color_producto{
+    display: none;
+  }
+
 }
 
-@media (max-width: 480px) {
-  .producto_titulo_megusta {
-    font-size: 1rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
-  }
-}
+
 
 
 

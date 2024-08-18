@@ -47,11 +47,6 @@ const Header = () => {
               </Link>
             </li>
           </div>
-          <div className='iconos_menu'>
-              <Link to="/carritouno">
-                <i className='bx bx-heart'></i>
-              </Link>
-            </div>
         </ul>
       </nav>
     </header>
