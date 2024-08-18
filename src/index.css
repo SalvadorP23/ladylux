@@ -1044,7 +1044,13 @@ main {
     display: none;
   }
 
+.button-container{
+  display: flex;
+  position: relative;
+}
 
+.contacto_fila{
+}
   /*Detalle Productos*/
 
   .detalle-producto-descripcion{
@@ -1087,6 +1093,8 @@ main {
   }
 
   .detalle-producto-titulo{
+    text-align: center;
+    justify-content: center;
   }
 
 
@@ -1170,132 +1178,140 @@ main {
 
 
 
+
+
+
+
+
+
+
 /********DetalleProducto********/
 .detalle-producto {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-  margin: 2rem;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto; /* Centra el contenedor principal */
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Limitar el ancho máximo para que se vea bien en todos los dispositivos */
+  text-align: center; /* Asegura que el texto dentro esté centrado */
 }
 
 .detalle-producto-imagen {
-  width: 40%;
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: contain;
-  max-width: 25rem;
+  object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: 25rem; /* Altura fija para que todas las imágenes sean del mismo tamaño */
 }
 
 .detalle-producto-texto {
-  width: 90%;
+  width: 100%;
   padding: 1rem;
   display: flex;
-  flex-direction: column; /* Alinea los elementos uno debajo del otro */
+  flex-direction: column;
+  align-items: center; /* Centra el contenido dentro del texto */
   background-color: rgba(255, 192, 203, 0.373);
   border-radius: 2rem;
   font-family: "Inter", sans-serif;
-  margin-left:2rem ;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-  font-variant: normal;
+  text-align: center; /* Asegura que el texto esté centrado */
 }
 
 .detalle-producto-titulo {
-  display: flex;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
-  margin: 0 10rem;
+  margin: 0;
   color: #333;
-  justify-content: center;
   border-radius: 2rem;
-  background-color: fae1ed6a;
-}
-
-.detalle-producto-descripcion {
-  font-size: 18px;
-  color: #000000;
-  margin-bottom: 2rem;
-  line-height: 1.5; /* Mejora la legibilidad */
-  text-align: justify; /* Justifica el texto */
-  padding: 1rem;
+  background-color: #fae1ed6a;
+  width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+  text-align: center; /* Centra el título */
 }
 
 .detalle-producto-precio {
-  display: inline-block; /* Permite ajustar el ancho del contenedor */
+  display: inline-block;
   font-size: 18px;
   color: #333;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   padding: 0.5rem;
-  border: 1px solid #333; /* Añade un borde */
-  border-radius: 0.5rem; /* Bordes redondeados */
-  align-self: flex-end; /* Mueve el precio hacia la derecha */
-  margin-top: -0.5rem;
-}
-
-.detalle-producto-color {
-  font-size: 18px;
-  color: #666;
-  margin-top: -0.5rem;
-  padding: 0 1rem;
-}
-
-/* Estilos para los botones del carrusel */
-.carousel-button-group {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.carousel-button-prev, .carousel-button-next {
-  display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  height: 3rem;
-  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
   text-align: center;
-  border-radius: 2rem;
 }
 
 .carousel-image-container {
   position: relative;
-  height: 35rem;
   display: flex;
-  align-items: center; /* Centra la imagen y los botones verticalmente */
-  justify-content: center; /* Centra la imagen horizontalmente */
-  margin-right: -2rem;
-  background-color: rgba(255, 199, 255, 0.213);
-  margin: 1rem;
-  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 25rem; /* Mantiene la altura del contenedor consistente */
 }
 
+.carousel .slider-wrapper {
+  height: 25rem; /* Asegura que el contenedor del carrusel tenga la misma altura que las imágenes */
+  margin: 0;
+  padding: 0;
+}
 
-
-/* Media queries para vista móvil */
+/* Ajustes para la vista móvil */
 @media (max-width: 768px) {
   .detalle-producto {
-    flex-direction: column; /* Cambia la dirección del flex a columna para móviles */
-    align-items: center;
+    padding: 0.5rem; /* Reduce el padding en dispositivos móviles */
+    max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    margin: 0; /* Elimina márgenes para usar todo el espacio disponible */
+    text-align: center; /* Asegura que el texto dentro esté centrado */
+  }
+
+  .detalle-producto-imagen {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    object-fit: cover; /* Cubre todo el contenedor, manteniendo la proporción */
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  .detalle-producto-texto {
+    padding: 0.5rem; /* Reduce el padding en dispositivos móviles */
+    background-color: rgba(255, 192, 203, 0.373); /* Mantiene el fondo rosa translúcido */
+    border-radius: 2rem; /* Bordes redondeados */
+    font-family: "Inter", sans-serif;
+    text-align: center; /* Asegura que el texto dentro esté centrado */
   }
 
   .detalle-producto-titulo {
-    font-size: 24px;
-    
+    font-size: 20px; /* Ajusta el tamaño de fuente en dispositivos móviles */
+    margin: 0; /* Elimina márgenes adicionales */
+    padding: 0.5rem; /* Añade padding para espaciado interno */
+    background-color: #fae1ed6a; /* Mantiene el fondo rosa translúcido */
   }
-  
-  .carousel-button-prev, .carousel-button-next {
-    width: 2.5rem;    
-    height: 50rem;
 
+  .detalle-producto-precio {
+    font-size: 16px; /* Ajusta el tamaño de fuente en dispositivos móviles */
+    margin: 0.5rem 0; /* Añade margen arriba y abajo para espaciado */
+    padding: 0.5rem;
+    border: 1px solid #333; /* Añade un borde */
+    border-radius: 0.5rem; /* Bordes redondeados */
+  }
+
+  .carousel-image-container {
+    position: relative;
+    height: 20rem; /* Ajusta la altura de la imagen en dispositivos móviles */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+  }
+
+  .carousel .slider-wrapper {
+    height: 20rem; /* Ajusta la altura al tamaño de la imagen */
+    margin: 0;
+    padding: 0;
+  }
+
+  .detalle-producto-color{
+    display: none;
   }
 }
-
