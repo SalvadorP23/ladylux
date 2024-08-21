@@ -6,7 +6,7 @@ import Carrito from './Carrito';
 import Carritouno from './Carritouno'; 
 import Contactos from './Contactos'; 
 import DetalleProducto from './DetalleProducto'; 
-import { productosarray } from './CatalogoIndex'; // Asegúrate de que esta línea esté correcta
+import { productosarray  } from './CatalogoIndex'; // Asegúrate de que esta línea esté correcta
 
 const App = () => {
   const [carrito, setCarrito] = useState([]);

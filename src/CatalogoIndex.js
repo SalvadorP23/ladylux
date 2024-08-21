@@ -1,119 +1,642 @@
-import bolsa01 from './imgs/productos/bolsa-01.png';
-import bolsa02 from './imgs/productos/bolsa-02.png';
-import bolsa03 from './imgs/productos/bolsa-03.png';
-import bolsa04 from './imgs/productos/bolsa-04.png';
-import bolsamano01 from './imgs/productos/bolsamano-01.png';
-import bolsamano02 from './imgs/productos/bolsamano-02.png';
-import bolsamano03 from './imgs/productos/bolsamano-03.png';
-import bolsamano04 from './imgs/productos/bolsamano-04.png';
-import bolsanina01 from './imgs/productos/bolsanina-01.png';
-import bolsanina02 from './imgs/productos/bolsanina-02.png';
-import bolsanina03 from './imgs/productos/bolsanina-03.png';
-import bolsanina04 from './imgs/productos/bolsanina-04.png';
-import Izquierda from './imgs/productos/Izquierda.png';
-import Derecha from './imgs/productos/Derecha.png';
-import Trasera from './imgs/productos/Trasera.png';
+// Importaciones para Modelo 1 AZUL
+import Izquierda1Azul from './imgs/Bolsas-mochilas/Modelo 1 AZUL/Izquierda.png';
+import Derecha1Azul from './imgs/Bolsas-mochilas/Modelo 1 AZUL/Derecha.png';
+import Atras1Azul from './imgs/Bolsas-mochilas/Modelo 1 AZUL/Atrás.png';
+import Frontal1Azul from './imgs/Bolsas-mochilas/Modelo 1 AZUL/Frontal.png';
+
+// Importaciones para Modelo 1 TOMMY
+import Izquierda1Tommy from './imgs/Bolsas-mochilas/Modelo 1 TOMMY/Izquierda.png';
+import Derecha1Tommy from './imgs/Bolsas-mochilas/Modelo 1 TOMMY/Derecha.png';
+import Atras1Tommy from './imgs/Bolsas-mochilas/Modelo 1 TOMMY/Atrás.png';
+import Frontal1Tommy from './imgs/Bolsas-mochilas/Modelo 1 TOMMY/Frontal.png';
+
+// Importaciones para Modelo 1 ROSA
+import Izquierda1Rosa from './imgs/Bolsas-mochilas/Modelo 1 ROSA/Izquierda.png';
+import Derecha1Rosa from './imgs/Bolsas-mochilas/Modelo 1 ROSA/Derecha.png';
+import Atras1Rosa from './imgs/Bolsas-mochilas/Modelo 1 ROSA/Atrás.png';
+import Frontal1Rosa from './imgs/Bolsas-mochilas/Modelo 1 ROSA/Frontal.png';
+
+// Importaciones para Modelo 2 AZUL
+import Izquierda2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Izquierda.png';
+import Derecha2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Derecha.jpg';
+import Atras2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Atrás.jpg';
+import Frontal2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Frontal.jpg';
+
+// Importaciones para Modelo 2 CAFÉ
+import Izquierda2Cafe from './imgs/Bolsas-mochilas/Modelo 2 CAFÉ/Izquierda.png';
+import Derecha2Cafe from './imgs/Bolsas-mochilas/Modelo 2 CAFÉ/Derecha.png';
+import Atras2Cafe from './imgs/Bolsas-mochilas/Modelo 2 CAFÉ/Atrás.png';
+import Frontal2Cafe from './imgs/Bolsas-mochilas/Modelo 2 CAFÉ/Frontal.png';
+
+// Importaciones para Modelo 2 ROSA
+import Izquierda2Rosa from './imgs/Bolsas-mochilas/Modelo 2 ROSA/Izquierda.png';
+import Derecha2Rosa from './imgs/Bolsas-mochilas/Modelo 2 ROSA/Derecha.png';
+import Atras2Rosa from './imgs/Bolsas-mochilas/Modelo 2 ROSA/Atrás.png';
+import Frontal2Rosa from './imgs/Bolsas-mochilas/Modelo 2 ROSA/Frontal.png';
+
+// Importaciones para Modelo 3 CAFÉ
+import Izquierda3Cafe from './imgs/Bolsas-mochilas/Modelo 3 CAFÉ/Izquierda.png';
+import Derecha3Cafe from './imgs/Bolsas-mochilas/Modelo 3 CAFÉ/Derecha.png';
+import Atras3Cafe from './imgs/Bolsas-mochilas/Modelo 3 CAFÉ/Atrás.png';
+import Frontal3Cafe from './imgs/Bolsas-mochilas/Modelo 3 CAFÉ/Frontal.png';
+
+// Importaciones para Modelo 3 LILA
+import Izquierda3Lila from './imgs/Bolsas-mochilas/Modelo 3 LILA/Izquierda.png';
+import Derecha3Lila from './imgs/Bolsas-mochilas/Modelo 3 LILA/Derecha.png';
+import Atras3Lila from './imgs/Bolsas-mochilas/Modelo 3 LILA/Atrás.png';
+import Frontal3Lila from './imgs/Bolsas-mochilas/Modelo 3 LILA/Frontal.png';
+
+// Importaciones para Modelo 3 NEGRO
+import Izquierda3Negro from './imgs/Bolsas-mochilas/Modelo 3 NEGRO/Izquierda.png';
+import Derecha3Negro from './imgs/Bolsas-mochilas/Modelo 3 NEGRO/Derecho.png';
+import Atras3Negro from './imgs/Bolsas-mochilas/Modelo 3 NEGRO/Atrás.png';
+import Frontal3Negro from './imgs/Bolsas-mochilas/Modelo 3 NEGRO/Frontal.png';
+
+// Importaciones para Modelo 3 ROSA
+import Izquierda3Rosa from './imgs/Bolsas-mochilas/Modelo 3 ROSA/Izquierda.png';
+import Derecha3Rosa from './imgs/Bolsas-mochilas/Modelo 3 ROSA/Derecha.png';
+import Atras3Rosa from './imgs/Bolsas-mochilas/Modelo 3 ROSA/Atrás.png';
+import Frontal3Rosa from './imgs/Bolsas-mochilas/Modelo 3 ROSA/Frontal.png';
+
+// Importaciones para Modelo 3 TURQUESA
+import Izquierda3Turquesa from './imgs/Bolsas-mochilas/Modelo 3 TURQUESA/Izquierda.png';
+import Derecha3Turquesa from './imgs/Bolsas-mochilas/Modelo 3 TURQUESA/Derecha.png';
+import Atras3Turquesa from './imgs/Bolsas-mochilas/Modelo 3 TURQUESA/Atrás.png';
+import Frontal3Turquesa from './imgs/Bolsas-mochilas/Modelo 3 TURQUESA/Frontal.png';
+
+// Importaciones para Modelo 4 AZUL
+import Izquierda4Azul from './imgs/Bolsas-mochilas/Modelo 4 AZUL/Izquierda.png';
+import Derecha4Azul from './imgs/Bolsas-mochilas/Modelo 4 AZUL/Derecha.png';
+import Atras4Azul from './imgs/Bolsas-mochilas/Modelo 4 AZUL/Atrás.png';
+import Frontal4Azul from './imgs/Bolsas-mochilas/Modelo 4 AZUL/Frontal.png';
+
+// Importaciones para Modelo 4 CAFÉ
+import Izquierda4Cafe from './imgs/Bolsas-mochilas/Modelo 4 CAFÉ/Izquierda.png';
+import Derecha4Cafe from './imgs/Bolsas-mochilas/Modelo 4 CAFÉ/Derecha.png';
+import Atras4Cafe from './imgs/Bolsas-mochilas/Modelo 4 CAFÉ/Atrás.png';
+import Frontal4Cafe from './imgs/Bolsas-mochilas/Modelo 4 CAFÉ/Frontal.png';
+
+// Importaciones para Modelo 4 NEGRO
+import Izquierda4Negro from './imgs/Bolsas-mochilas/Modelo 4 NEGRO/Izquierda.png';
+import Derecha4Negro from './imgs/Bolsas-mochilas/Modelo 4 NEGRO/Derecha.png';
+import Atras4Negro from './imgs/Bolsas-mochilas/Modelo 4 NEGRO/Atrás.png';
+import Frontal4Negro from './imgs/Bolsas-mochilas/Modelo 4 NEGRO/Frente.png';
+
+// Importaciones para Modelo 5 CREMA
+import Izquierda5Crema from './imgs/Bolsas-mochilas/Modelo 5 CREMA/Izquierda.png';
+import Derecha5Crema from './imgs/Bolsas-mochilas/Modelo 5 CREMA/Derecha.png';
+import Atras5Crema from './imgs/Bolsas-mochilas/Modelo 5 CREMA/Atrás.png';
+import Frontal5Crema from './imgs/Bolsas-mochilas/Modelo 5 CREMA/Frente.png';
+
+// Importaciones para Modelo 5 NEGRA
+import Izquierda5Negra from './imgs/Bolsas-mochilas/Modelo 5 NEGRA/Izquierda.png';
+import Derecha5Negra from './imgs/Bolsas-mochilas/Modelo 5 NEGRA/Derecha.png';
+import Atras5Negra from './imgs/Bolsas-mochilas/Modelo 5 NEGRA/Atrás.png';
+import Frontal5Negra from './imgs/Bolsas-mochilas/Modelo 5 NEGRA/Frente.png';
+
+// Importaciones para Modelo 6 CAFÉ
+import Izquierda6Cafe from './imgs/Bolsas-mochilas/Modelo 6 CAFÉ/Izquierda.png';
+import Derecha6Cafe from './imgs/Bolsas-mochilas/Modelo 6 CAFÉ/Derecha.png';
+import Atras6Cafe from './imgs/Bolsas-mochilas/Modelo 6 CAFÉ/Atrás.png';
+import Frontal6Cafe from './imgs/Bolsas-mochilas/Modelo 6 CAFÉ/Frontal.png';
+
+// Importaciones para Modelo 6 ROJA
+import Izquierda6Roja from './imgs/Bolsas-mochilas/Modelo 6 ROJA/Izquierda.png';
+import Derecha6Roja from './imgs/Bolsas-mochilas/Modelo 6 ROJA/Derecha.png';
+import Atras6Roja from './imgs/Bolsas-mochilas/Modelo 6 ROJA/Atrás.png';
+import Frontal6Roja from './imgs/Bolsas-mochilas/Modelo 6 ROJA/Frontal.png';
+
+// Importaciones para Modelo 7 AZUL
+import Izquierda7Azul from './imgs/Bolsas-mochilas/Modelo 7 AZUL/Izquierda.png';
+import Derecha7Azul from './imgs/Bolsas-mochilas/Modelo 7 AZUL/Derecha.png';
+import Atras7Azul from './imgs/Bolsas-mochilas/Modelo 7 AZUL/Atrás.png';
+import Frontal7Azul from './imgs/Bolsas-mochilas/Modelo 7 AZUL/Frontal.png';
+
+// Importaciones para Modelo 7 NEGRO
+import Izquierda7Negro from './imgs/Bolsas-mochilas/Modelo 7 NEGRO/Izquierda.png';
+import Derecha7Negro from './imgs/Bolsas-mochilas/Modelo 7 NEGRO/Derecha.png';
+import Atras7Negro from './imgs/Bolsas-mochilas/Modelo 7 NEGRO/Atrás.png';
+import Frontal7Negro from './imgs/Bolsas-mochilas/Modelo 7 NEGRO/Frontal.png';
+
+import Frontal8Azul from './imgs/Bolsas-mochilas/Modelo 8 AZUL/Frente.png';
+
+import Izquierda8Beige from './imgs/Bolsas-mochilas/Modelo 8 BEIGE/Izquierda.png';
+import Derecha8Beige from './imgs/Bolsas-mochilas/Modelo 8 BEIGE/Derecha.png';
+import Atras8Beige from './imgs/Bolsas-mochilas/Modelo 8 BEIGE/Atrás.png';
+import Frontal8Beige from './imgs/Bolsas-mochilas/Modelo 8 BEIGE/Frente.png';
+
+import Frontal8Negro from './imgs/Bolsas-mochilas/Modelo 8 NEGRO/Frente.png';
+
+import Frontal8Rojo from './imgs/Bolsas-mochilas/Modelo 8 ROJA/Frente.png';
+
+import Izquierda9Beige from './imgs/Bolsas-mochilas/Modelo 9 BEIGE/Izquierda.png';
+import Derecha9Beige from './imgs/Bolsas-mochilas/Modelo 9 BEIGE/Derecha.png';
+import Atras9Beige from './imgs/Bolsas-mochilas/Modelo 9 BEIGE/Atrás.png';
+import Frontal9Beige from './imgs/Bolsas-mochilas/Modelo 9 BEIGE/Frente.png';
+
+import Izquierda10Blanco from './imgs/Bolsas-mochilas/Modelo 10 BLANCO/Izquierda.png';
+import Derecha10Blanco from './imgs/Bolsas-mochilas/Modelo 10 BLANCO/Derecha.png';
+import Atras10Blanco from './imgs/Bolsas-mochilas/Modelo 10 BLANCO/Atrás.png';
+import Frontal10Blanco from './imgs/Bolsas-mochilas/Modelo 10 BLANCO/Frente.png';
+
+import Izquierda10Negro from './imgs/Bolsas-mochilas/Modelo 10 NEGRO/Izquierda.png';
+import Derecha10Negro from './imgs/Bolsas-mochilas/Modelo 10 NEGRO/Derecha.png';
+import Atras10Negro from './imgs/Bolsas-mochilas/Modelo 10 NEGRO/Atrás.png';
+import Frontal10Negro from './imgs/Bolsas-mochilas/Modelo 10 NEGRO/Frente.png';
+
+import Izquierda11Amarillo from './imgs/Bolsas-mochilas/Modelo 11 AMARILLO/Izquierda.png';
+import Derecha11Amarillo from './imgs/Bolsas-mochilas/Modelo 11 AMARILLO/Derecha.png';
+import Atras11Amarillo from './imgs/Bolsas-mochilas/Modelo 11 AMARILLO/Atrás.png';
+import Frontal11Amarillo from './imgs/Bolsas-mochilas/Modelo 11 AMARILLO/Frente.png';
+
+import Izquierda11Negro from './imgs/Bolsas-mochilas/Modelo 11 NEGRO/Izquierda.png';
+import Frontal11Negro from './imgs/Bolsas-mochilas/Modelo 11 NEGRO/Frente.png';
+
+import Izquierda12Rojo from './imgs/Bolsas-mochilas/Modelo 12 ROJO/Izquierda.png';
+import Derecha12Rojo from './imgs/Bolsas-mochilas/Modelo 12 ROJO/Derecha.png';
+import Atras12Rojo from './imgs/Bolsas-mochilas/Modelo 12 ROJO/Atrás.png';
+import Frontal12Rojo from './imgs/Bolsas-mochilas/Modelo 12 ROJO/Frente.png';
+
+import Izquierda12Rosa from './imgs/Bolsas-mochilas/Modelo 12 ROSA/Izquierda.png';
+import Derecha12Rosa from './imgs/Bolsas-mochilas/Modelo 12 ROSA/Derecha.png';
+import Atras12Rosa from './imgs/Bolsas-mochilas/Modelo 12 ROSA/Atrás.png';
+import Frontal12Rosa from './imgs/Bolsas-mochilas/Modelo 12 ROSA/Frente.png';
+
+import Izquierda13Rosa from './imgs/Bolsas-mochilas/Modelo 13 ROSA/Izquierda.png';
+import Derecha13Rosa from './imgs/Bolsas-mochilas/Modelo 13 ROSA/Derecha.png';
+import Atras13Rosa from './imgs/Bolsas-mochilas/Modelo 13 ROSA/Atrás.png';
+import Frontal13Rosa from './imgs/Bolsas-mochilas/Modelo 13 ROSA/Frente.png';
+
+import Izquierda13Verde from './imgs/Bolsas-mochilas/Modelo 13 VERDE/Izquierda.png';
+import Derecha13Verde from './imgs/Bolsas-mochilas/Modelo 13 VERDE/Derecha.png';
+import Atras13Verde from './imgs/Bolsas-mochilas/Modelo 13 VERDE/Atrás.png';
+import Frontal13Verde from './imgs/Bolsas-mochilas/Modelo 13 VERDE/Frente.png';
+
+import Izquierda14Azul from './imgs/Bolsas-mochilas/Modelo 14 AZUL/Izquierda.png';
+import Derecha14Azul from './imgs/Bolsas-mochilas/Modelo 14 AZUL/Derecha.png';
+import Atras14Azul from './imgs/Bolsas-mochilas/Modelo 14 AZUL/Atrás.png';
+import Frontal14Azul from './imgs/Bolsas-mochilas/Modelo 14 AZUL/Frente.png';
+
+import Izquierda14Verde from './imgs/Bolsas-mochilas/Modelo 14 VERDE/Izquierda.png';
+import Derecha14Verde from './imgs/Bolsas-mochilas/Modelo 14 VERDE/Derecha.png';
+import Atras14Verde from './imgs/Bolsas-mochilas/Modelo 14 VERDE/Atrás.png';
+import Frontal14Verde from './imgs/Bolsas-mochilas/Modelo 14 VERDE/Frente.png';
+
+import Izquierda15Azul from './imgs/Bolsas-mochilas/Modelo 15 AZUL/Izquierda.png';
+import Derecha15Azul from './imgs/Bolsas-mochilas/Modelo 15 AZUL/Derecha.png';
+import Atras15Azul from './imgs/Bolsas-mochilas/Modelo 15 AZUL/Atrás.png';
+import Frontal15Azul from './imgs/Bolsas-mochilas/Modelo 15 AZUL/Frente.png';
+
+import Derecha15Mostaza from './imgs/Bolsas-mochilas/Modelo 15 MOSTAZA/Derecha.png';
+import Frontal15Mostaza from './imgs/Bolsas-mochilas/Modelo 15 MOSTAZA/Frente.png';
+
+import Derecha15Rojizo from './imgs/Bolsas-mochilas/Modelo 15 ROJIZO/Derecha.png';
+import Frontal15Rojizo from './imgs/Bolsas-mochilas/Modelo 15 ROJIZO/Frente.png';
+
+import Izquierda16Negro from './imgs/Bolsas-mochilas/Modelo 16 NEGRO/Izquierda.png';
+import Derecha16Negro from './imgs/Bolsas-mochilas/Modelo 16 NEGRO/Derecha.png';
+import Atras16Negro from './imgs/Bolsas-mochilas/Modelo 16 NEGRO/Atrás.png';
+import Frontal16Negro from './imgs/Bolsas-mochilas/Modelo 16 NEGRO/Frente.png';
+
+import Derecha16Rosa from './imgs/Bolsas-mochilas/Modelo 16 ROSA/Derecha.png';
+import Frontal16Rosa from './imgs/Bolsas-mochilas/Modelo 16 ROSA/Frente.png';
+
+import Izquierda17Blanco from './imgs/Bolsas-mochilas/Modelo 17 BLANCO/Izquierdo.png';
+import Derecha17Blanco from './imgs/Bolsas-mochilas/Modelo 17 BLANCO/Derecho.png';
+import Atras17Blanco from './imgs/Bolsas-mochilas/Modelo 17 BLANCO/Atrás.png';
+import Frontal17Blanco from './imgs/Bolsas-mochilas/Modelo 17 BLANCO/Frente.png';
+
+import Izquierda18Negro from './imgs/Bolsas-mochilas/Modelo 18 NEGRO/Izquierdo.png';
+import Derecha18Negro from './imgs/Bolsas-mochilas/Modelo 18 NEGRO/Derecho.png';
+import Atras18Negro from './imgs/Bolsas-mochilas/Modelo 18 NEGRO/Atrás.png';
+import Frontal18Negro from './imgs/Bolsas-mochilas/Modelo 18 NEGRO/Frente.png';
+
+import Izquierda19Vino from './imgs/Bolsas-mochilas/Modelo 19 VINO/Izquierdo.png';
+import Derecha19Vino from './imgs/Bolsas-mochilas/Modelo 19 VINO/Derecho.png';
+import Atras19Vino from './imgs/Bolsas-mochilas/Modelo 19 VINO/Atrás.png';
+import Frontal19Vino from './imgs/Bolsas-mochilas/Modelo 19 VINO/Frente.png';
+
+import Izquierda20Negro from './imgs/Bolsas-mochilas/Modelo 20 NEGRO/Izquierda.png';
+import Derecha20Negro from './imgs/Bolsas-mochilas/Modelo 20 NEGRO/Derecha.png';
+import Atras20Negro from './imgs/Bolsas-mochilas/Modelo 20 NEGRO/Atrás.png';
+import Frontal20Negro from './imgs/Bolsas-mochilas/Modelo 20 NEGRO/Frente.png';
+
+import Izquierda20Rojo from './imgs/Bolsas-mochilas/Modelo 20 ROJO/Izquierdo.png';
+import Derecha20Rojo from './imgs/Bolsas-mochilas/Modelo 20 ROJO/Derecho.png';
+import Atras20Rojo from './imgs/Bolsas-mochilas/Modelo 20 ROJO/Atrás.png';
+import Frontal20Rojo from './imgs/Bolsas-mochilas/Modelo 20 ROJO/Frente.png';
+
 
 export const productosarray = [
-    { 
-      id: "bolsa-01", 
-      titulo: "Bolsa Ale", 
-      imagenes: [bolsa01, Izquierda, Derecha, Trasera], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsa_mujer" }, 
-      precio: "$350", 
-      descripcion: "Nuestra bolsa de mujer combina estilo y funcionalidad en un diseño sofisticado. Fabricada con materiales de alta calidad, ofrece una durabilidad excepcional y un toque de lujo. Su amplio compartimento principal es perfecto para llevar todos tus esenciales diarios, mientras que los bolsillos internos te permiten organizar pequeños accesorios con facilidad. El diseño moderno y las líneas elegantes se adaptan a cualquier ocasión, desde una salida casual hasta eventos más formales. Disponible en una variedad de colores y texturas, esta bolsa es el complemento ideal para realzar tu atuendo y mantenerte organizada. Con asas robustas y un diseño ergonómico, disfrutarás de comodidad y practicidad en cada uso. ¡Hazla tuya y añade un toque de elegancia a tu estilo diario!" 
-    },
-    { 
-      id: "bolsa-02", 
-      titulo: "Bolsa 02", 
-      imagenes: [bolsa02,bolsa01, Izquierda, Derecha, Trasera], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsa_mujer" }, 
-      precio: "$250", 
-      descripcion: "Nuestra bolsa de mujer combina estilo y funcionalidad en un diseño sofisticado. Fabricada con materiales de alta calidad, ofrece una durabilidad excepcional y un toque de lujo. Su amplio compartimento principal es perfecto para llevar todos tus esenciales diarios, mientras que los bolsillos internos te permiten organizar pequeños accesorios con facilidad. El diseño moderno y las líneas elegantes se adaptan a cualquier ocasión, desde una salida casual hasta eventos más formales. Disponible en una variedad de colores y texturas, esta bolsa es el complemento ideal para realzar tu atuendo y mantenerte organizada. Con asas robustas y un diseño ergonómico, disfrutarás de comodidad y practicidad en cada uso. ¡Hazla tuya y añade un toque de elegancia a tu estilo diario!" 
-    },
-    { 
-      id: "bolsa-03", 
-      titulo: "Bolsa 03", 
-      imagenes: [bolsa03, bolsa01, Izquierda, Derecha, Trasera], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsa_mujer" }, 
-      precio: "$250",
-      descripcion: "Nuestra bolsa de mujer combina estilo y funcionalidad en un diseño sofisticado. Fabricada con materiales de alta calidad, ofrece una durabilidad excepcional y un toque de lujo. Su amplio compartimento principal es perfecto para llevar todos tus esenciales diarios, mientras que los bolsillos internos te permiten organizar pequeños accesorios con facilidad. El diseño moderno y las líneas elegantes se adaptan a cualquier ocasión, desde una salida casual hasta eventos más formales. Disponible en una variedad de colores y texturas, esta bolsa es el complemento ideal para realzar tu atuendo y mantenerte organizada. Con asas robustas y un diseño ergonómico, disfrutarás de comodidad y practicidad en cada uso. ¡Hazla tuya y añade un toque de elegancia a tu estilo diario!" 
-    },
-    { 
-      id: "bolsa-04", 
-      titulo: "Bolsa 04", 
-      imagenes: [bolsa04], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsa_mujer" }, 
-      precio: "$250" 
-    },
-    // Bolsas mano
-    { 
-      id: "bolsamano-01", 
-      titulo: "Bolsa de mano 01", 
-      imagenes: [bolsamano01], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsa_mano" }, 
-      precio: "$250" 
-    },
-    { 
-      id: "bolsamano-02", 
-      titulo: "Bolsa de mano 02", 
-      imagenes: [bolsamano02], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsa_mano" }, 
-      precio: "$250" 
-    },
-    { 
-      id: "bolsamano-03", 
-      titulo: "Bolsa de mano 03", 
-      imagenes: [bolsamano03], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsa_mano" }, 
-      precio: "$250" 
-    },
-    { 
-      id: "bolsamano-04", 
-      titulo: "Bolsa de mano 04", 
-      imagenes: [bolsamano04], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsa_mano" }, 
-      precio: "$250" 
-    },
-    // Bolsas de niña
-    { 
-      id: "bolsanina-01", 
-      titulo: "Bolsa de niña 01", 
-      imagenes: [bolsanina01], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsas_nina" }, 
-      precio: "$250" 
-    },
-    { 
-      id: "bolsanina-02", 
-      titulo: "Bolsa de niña 02", 
-      imagenes: [bolsanina02], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsas_nina" }, 
-      precio: "$250" 
-    },
-    { 
-      id: "bolsanina-03", 
-      titulo: "Bolsa de niña 03", 
-      imagenes: [bolsanina03], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsas_nina" }, 
-      precio: "$250" 
-    },
-    { 
-      id: "bolsanina-04", 
-      titulo: "Bolsa de niña 04", 
-      imagenes: [bolsanina04], // Cambiado de 'imagen' a 'imagenes'
-      color: "blanco", 
-      categoria: { nombre: "bolsa", id: "bolsas_nina" }, 
-      precio: "$250" 
-    },
-  ];
+  {
+    id: "bolsa-01",
+    titulo: "Modelo 1 AZUL",
+    imagenes: [Frontal1Azul, Derecha1Azul, Izquierda1Azul, Atras1Azul],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$300",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-02",
+    titulo: "Modelo 1 TOMMY",
+    imagenes: [Frontal1Tommy, Derecha1Tommy, Izquierda1Tommy, Atras1Tommy],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$350",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-03",
+    titulo: "Modelo 1 ROSA",
+    imagenes: [Frontal1Rosa, Derecha1Rosa, Izquierda1Rosa, Atras1Rosa],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$300",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-04",
+    titulo: "Modelo 2 AZUL",
+    imagenes: [Frontal2Azul, Derecha2Azul, Izquierda2Azul, Atras2Azul],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$320",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-05",
+    titulo: "Modelo 2 CAFÉ",
+    imagenes: [Frontal2Cafe, Derecha2Cafe, Izquierda2Cafe, Atras2Cafe],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$330",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-06",
+    titulo: "Modelo 2 ROSA",
+    imagenes: [Frontal2Rosa, Derecha2Rosa, Izquierda2Rosa, Atras2Rosa],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$340",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-07",
+    titulo: "Modelo 3 CAFÉ",
+    imagenes: [Frontal3Cafe, Derecha3Cafe, Izquierda3Cafe, Atras3Cafe],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$350",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-08",
+    titulo: "Modelo 3 LILA",
+    imagenes: [Frontal3Lila, Derecha3Lila, Izquierda3Lila, Atras3Lila],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$360",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-09",
+    titulo: "Modelo 3 NEGRO",
+    imagenes: [Frontal3Negro, Derecha3Negro, Izquierda3Negro, Atras3Negro],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$370",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-10",
+    titulo: "Modelo 3 ROSA",
+    imagenes: [Frontal3Rosa, Derecha3Rosa, Izquierda3Rosa, Atras3Rosa],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$380",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-11",
+    titulo: "Modelo 3 TURQUESA",
+    imagenes: [Frontal3Turquesa, Derecha3Turquesa, Izquierda3Turquesa, Atras3Turquesa],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$390",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-12",
+    titulo: "Modelo 4 AZUL",
+    imagenes: [Frontal4Azul, Derecha4Azul, Izquierda4Azul, Atras4Azul],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$400",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-13",
+    titulo: "Modelo 4 CAFÉ",
+    imagenes: [Frontal4Cafe, Derecha4Cafe, Izquierda4Cafe, Atras4Cafe],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$410",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-14",
+    titulo: "Modelo 4 NEGRO",
+    imagenes: [Frontal4Negro, Derecha4Negro, Izquierda4Negro, Atras4Negro],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$420",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-15",
+    titulo: "Modelo 5 CREMA",
+    imagenes: [Frontal5Crema, Derecha5Crema, Izquierda5Crema, Atras5Crema],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$430",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-16",
+    titulo: "Modelo 5 NEGRA",
+    imagenes: [Frontal5Negra, Derecha5Negra, Izquierda5Negra, Atras5Negra],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$440",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-17",
+    titulo: "Modelo 6 CAFÉ",
+    imagenes: [Frontal6Cafe, Derecha6Cafe, Izquierda6Cafe, Atras6Cafe],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$450",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-18",
+    titulo: "Modelo 6 ROJA",
+    imagenes: [Frontal6Roja, Derecha6Roja, Izquierda6Roja, Atras6Roja],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$460",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-19",
+    titulo: "Modelo 7 AZUL",
+    imagenes: [Frontal7Azul, Derecha7Azul, Izquierda7Azul, Atras7Azul],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$470",
+    descripcion: ""
+  },
+
+  {
+    id: "bolsa-20",
+    titulo: "Modelo 7 NEGRO",
+    imagenes: [Frontal7Negro, Derecha7Negro, Izquierda7Negro, Atras7Negro],
+    color: "negro",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$480",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-21",
+    titulo: "Modelo 8 AZUL",
+    imagenes: [Frontal8Azul],
+    color: "azul",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$500",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-22",
+    titulo: "Modelo 8 BEIGE",
+    imagenes: [Frontal8Beige, Derecha8Beige, Izquierda8Beige, Atras8Beige],
+    color: "beige",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$520",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-23",
+    titulo: "Modelo 8 NEGRO",
+    imagenes: [Frontal8Negro],
+    color: "negro",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$540",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-24",
+    titulo: "Modelo 8 ROJO",
+    imagenes: [Frontal8Rojo],
+    color: "rojo",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$560",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-25",
+    titulo: "Modelo 9 BEIGE",
+    imagenes: [Frontal9Beige, Derecha9Beige, Izquierda9Beige, Atras9Beige],
+    color: "beige",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$580",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-26",
+    titulo: "Modelo 10 BLANCO",
+    imagenes: [Frontal10Blanco, Derecha10Blanco, Izquierda10Blanco, Atras10Blanco],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$600",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-27",
+    titulo: "Modelo 10 NEGRO",
+    imagenes: [Frontal10Negro, Derecha10Negro, Izquierda10Negro, Atras10Negro],
+    color: "negro",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$620",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-28",
+    titulo: "Modelo 11 AMARILLO",
+    imagenes: [Frontal11Amarillo, Derecha11Amarillo, Izquierda11Amarillo, Atras11Amarillo],
+    color: "amarillo",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$640",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-29",
+    titulo: "Modelo 11 NEGRO",
+    imagenes: [Frontal11Negro, Izquierda11Negro],
+    color: "negro",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$660",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-30",
+    titulo: "Modelo 12 ROJO",
+    imagenes: [Frontal12Rojo, Derecha12Rojo, Izquierda12Rojo, Atras12Rojo],
+    color: "rojo",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$680",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-31",
+    titulo: "Modelo 12 ROSA",
+    imagenes: [Frontal12Rosa, Derecha12Rosa, Izquierda12Rosa, Atras12Rosa],
+    color: "rosa",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$700",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-32",
+    titulo: "Modelo 13 ROSA",
+    imagenes: [Frontal13Rosa, Derecha13Rosa, Izquierda13Rosa, Atras13Rosa],
+    color: "rosa",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$720",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-33",
+    titulo: "Modelo 13 VERDE",
+    imagenes: [Frontal13Verde, Derecha13Verde, Izquierda13Verde, Atras13Verde],
+    color: "verde",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$740",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-34",
+    titulo: "Modelo 14 AZUL",
+    imagenes: [Frontal14Azul, Derecha14Azul, Izquierda14Azul, Atras14Azul],
+    color: "azul",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$760",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-35",
+    titulo: "Modelo 14 VERDE",
+    imagenes: [Frontal14Verde, Derecha14Verde, Izquierda14Verde, Atras14Verde],
+    color: "verde",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$780",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-36",
+    titulo: "Modelo 15 AZUL",
+    imagenes: [Frontal15Azul, Derecha15Azul, Izquierda15Azul, Atras15Azul],
+    color: "azul",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$800",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-37",
+    titulo: "Modelo 15 MOSTAZA",
+    imagenes: [Frontal15Mostaza, Derecha15Mostaza],
+    color: "mostaza",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$820",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-38",
+    titulo: "Modelo 15 ROJIZO",
+    imagenes: [Frontal15Rojizo, Derecha15Rojizo],
+    color: "rojizo",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$840",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-39",
+    titulo: "Modelo 16 NEGRO",
+    imagenes: [Frontal16Negro, Derecha16Negro, Izquierda16Negro, Atras16Negro],
+    color: "negro",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$860",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-40",
+    titulo: "Modelo 16 ROSA",
+    imagenes: [Frontal16Rosa, Derecha16Rosa],
+    color: "rosa",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$880",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-41",
+    titulo: "Modelo 17 BLANCO",
+    imagenes: [Frontal17Blanco, Derecha17Blanco, Izquierda17Blanco, Atras17Blanco],
+    color: "blanco",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$900",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-42",
+    titulo: "Modelo 18 NEGRO",
+    imagenes: [Frontal18Negro, Derecha18Negro, Izquierda18Negro, Atras18Negro],
+    color: "negro",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$920",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-43",
+    titulo: "Modelo 19 VINO",
+    imagenes: [Frontal19Vino, Derecha19Vino, Izquierda19Vino, Atras19Vino],
+    color: "vino",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$940",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-44",
+    titulo: "Modelo 20 NEGRO",
+    imagenes: [Frontal20Negro, Derecha20Negro, Izquierda20Negro, Atras20Negro],
+    color: "negro",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$960",
+    descripcion: ""
+  },
+  {
+    id: "bolsa-45",
+    titulo: "Modelo 20 ROJO",
+    imagenes: [Frontal20Rojo, Derecha20Rojo, Izquierda20Rojo, Atras20Rojo],
+    color: "rojo",
+    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    precio: "$980",
+    descripcion: ""
+  }
+
+
+];
+
+
+export default productosarray;  // Exportación por defecto

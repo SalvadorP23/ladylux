@@ -206,7 +206,7 @@
     width: auto; /* Permite que el ancho se ajuste automáticamente */
     text-align: center; /* Cambia la alineación del texto */
     margin: 0; /* Elimina el margen para evitar el desbordamiento */
-    padding: 0 0.6rem 0 0.6rem;
+    padding: 0 0.6 rem 0 0.6rem;
   }
 
   .fila_producto_carrito {
