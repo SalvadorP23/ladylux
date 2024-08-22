@@ -1,12 +1,10 @@
-// src/Catalogo.js
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import bolsaheader from './imgs/productos/bolsa-04.png';
 import { productosarray } from './CatalogoIndex'; // Importando productosarray
 
-const Catalogo = ({ agregarAlcarrito, agregarAmegusta }) => {
+const Catalogo = ({ agregarAlCarrito, agregarAmegusta }) => {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todas');
   const [seleccionado, setSeleccionado] = useState('Todas'); // Estado para botón seleccionado
   const location = useLocation();
@@ -68,7 +66,7 @@ const Catalogo = ({ agregarAlcarrito, agregarAmegusta }) => {
                 <img src={producto.imagenes[0]} alt={producto.titulo} className="producto_imagen" />
                 <button className="boton_carrito" onClick={(e) => { 
                     e.preventDefault();
-                    agregarAlcarrito(producto);
+                    agregarAlCarrito(producto); // Asegúrate de usar el nombre correcto del prop
                 }}>
                   <i className="bx bx-cart bx-cart_producto_carrito"></i>
                 </button>

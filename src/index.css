@@ -986,6 +986,10 @@ main {
 
 
 
+
+
+
+
 /***Me gusta******/
 .megusta_vacio{
   display: flex;
@@ -1539,4 +1543,121 @@ main {
   .detalle-producto-color{
     display: none;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* src/FormularioVentana.css */
+.formulario-ventana {
+  position: relative;
+}
+
+.formulario-toggle {
+  background-color: yellow;
+  color: orange;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario-contenedor {
+  background-color: aqua;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.formulario {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  background-color: violet;
+  margin-bottom: 10px;
+}
+
+.formulario input, .formulario textarea {
+  background-color: red;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.formulario button {
+  background-color: rgba(255, 226, 231, 0.068);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+
+
+/*Botones de compra*/
+.boton_mas, .boton_menos{
+  color: red;
+  background-color: transparent;
+  font-size: 1rem;
+  border: transparent;
+}
+
+.boton_mas:hover, .boton_menos:hover{
+  color: purple;
+}
+
+.input_cantidad_carrito{
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  border: transparent;
+}
+
+.botontotalcarrito{
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  background-color: #ffdbec;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.botoncomprarahora{
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-left: 85%;
+  display: flex;
+  background-color: #ffdbec;
+  cursor: pointer;
+  padding: 1rem;
+  border-color: violet;
+  border-style: dashed;
+  border-radius: 1rem;
+}
+
+
+.botoncomprarahora:hover {
+  background-color: pink;
+  cursor: pointer;
 }

@@ -1,6 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Carrito = ({ carrito, eliminarElementocarrito }) => {
+const Carrito = ({ carrito, eliminarElementocarrito, actualizarCantidad, calcularTotalCarrito }) => {
+  const navigate = useNavigate(); // Hook para la navegación
+
+  const manejarCompraAhora = () => {
+    navigate('/formulario'); // Redirige al formulario
+  };
+
   return (
     <div>
       <h1 className='titulo_megusta'>Carrito de compras</h1>
@@ -13,34 +20,65 @@ const Carrito = ({ carrito, eliminarElementocarrito }) => {
             <div key={producto.id} className='producto_carrito'>
               <div className='contenedor_productos_texto_carrito'>
                 <img 
-                  img src={producto.imagenes[0]}
+                  src={producto.imagenes[0]}
                   alt={producto.titulo || 'Producto'} 
                   className='producto_imagen_carrito' 
                 />
                 <div className='fila_producto_carrito'>
                   <div>
-                    <h3 className='producto_titulo_carrito_producto'>Título</h3>
                     <h3 className='producto_titulo_carrito'>{producto.titulo || 'Título no disponible'}</h3>
                   </div>
                   <div>
-                    <p className='color_producto_carrito'>Cantidad</p>
-                    <p className='color_producto_carrito'>5</p>
+                    <button 
+                      className='boton_menos' 
+                      onClick={() => actualizarCantidad(producto.id, producto.cantidad - 1)}
+                    >
+                      -
+                    </button>
+                    <input 
+                      type="text" 
+                      value={producto.cantidad} 
+                      readOnly 
+                      className='input_cantidad_carrito'
+                    />
+                    <button 
+                      className='boton_mas' 
+                      onClick={() => actualizarCantidad(producto.id, producto.cantidad + 1)}
+                    >
+                      +
+                    </button>
                   </div>
                   <div>
                     <p className='producto_precio_carrito'>Precio</p>
-                    <p className='producto_precio_carrito'>{producto.precio || 'Precio no disponible'}</p>
+                    <p className='producto_precio_carrito'>
+                      ${Number(producto.precio).toFixed(2) || 'Precio no disponible'}
+                    </p>
                   </div>
                   <div>
-                    <p className='producto_precio_carrito'>Total</p>
-                    <p className='producto_precio_carrito_precio'>$250.00</p>
+                    <p className='producto_precio_carrito'>Subtotal</p>
+                    <p className='producto_precio_carrito_precio'>
+                      ${ (Number(producto.precio) * producto.cantidad).toFixed(2) }
+                    </p>
                   </div>
-                  <button className="boton_trashdos" onClick={() => eliminarElementocarrito(producto.id)}>
+                  <button 
+                    className="boton_trashdos" 
+                    onClick={() => eliminarElementocarrito(producto.id)}
+                  >
                     <i className='bx bx-trash icono_basura'></i>
                   </button>
                 </div>
               </div>
             </div>
           ))}
+          {/* Botón de total, fuera del map */}
+          <div className='contenedor_total_carrito'>
+            <div className='botontotalcarrito'>
+              Total: ${calcularTotalCarrito()}
+            </div>
+            <button className='botoncomprarahora' onClick={manejarCompraAhora}>
+              Comprar ya
+            </button>
+          </div>
         </div>
       )}
     </div>
@@ -48,5 +86,3 @@ const Carrito = ({ carrito, eliminarElementocarrito }) => {
 };
 
 export default Carrito;
-
-
