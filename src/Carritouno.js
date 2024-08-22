@@ -1,19 +1,6 @@
 import React from 'react';
 
 const Carritouno = ({ carritouno, agregarAlCarrito, eliminarElemento }) => {
-
-  // Función para manejar la adición al carrito
-  const manejarAgregarAlCarrito = (producto) => {
-    // Verificar si el producto ya está en el carrito
-    const productoEnCarrito = carritouno.some(item => item.id === producto.id);
-    
-    if (!productoEnCarrito) {
-      agregarAlCarrito(producto);
-    } else {
-      alert('Este producto ya está en el carrito.');
-    }
-  };
-
   return (
     <div className="carrito-container">
       <h1 className='titulo_megusta'>Me gusta</h1>
@@ -23,7 +10,11 @@ const Carritouno = ({ carritouno, agregarAlCarrito, eliminarElemento }) => {
         <div className='contenedor_productos_megusta'>
           {carritouno.map(producto => (
             <div key={producto.id} className='producto_megusta'>
-              <img src={producto.imagenes[0]} alt="bolsas" className='producto_imagen_megusta' /> {/* Asegúrate de que producto.imagenes sea un array */}
+              <img 
+                src={producto.imagenes?.[0] || 'ruta/de/imagen/predeterminada.jpg'} 
+                alt={producto.titulo || "bolsas"} 
+                className='producto_imagen_megusta' 
+              /> {/* Asegúrate de que producto.imagenes sea un array */}
               <div className='producto_texto_megusta'>
                 <h3 className='producto_titulo_megusta'>{producto.titulo}</h3>
                 <p className='producto_precio_megusta'>
@@ -42,4 +33,3 @@ const Carritouno = ({ carritouno, agregarAlCarrito, eliminarElemento }) => {
 };
 
 export default Carritouno;
-
