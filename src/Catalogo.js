@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import bolsaheader from './imgs/productos/bolsa-04.png';
-import { productosarray } from './CatalogoIndex'; // Importando productosarray
+import { productosarray } from './CatalogoIndex';
 
 const Catalogo = ({ agregarAlCarrito, agregarAmegusta }) => {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todas');
-  const [seleccionado, setSeleccionado] = useState('Todas'); // Estado para botón seleccionado
+  const [seleccionado, setSeleccionado] = useState('Todas');
+  const [botonesPresionados, setBotonesPresionados] = useState({});
+
   const location = useLocation();
 
   useEffect(() => {
@@ -27,7 +29,17 @@ const Catalogo = ({ agregarAlCarrito, agregarAmegusta }) => {
 
   const manejarFiltro = (categoria) => {
     setCategoriaSeleccionada(categoria);
-    setSeleccionado(categoria); // Actualiza el estado del botón seleccionado
+    setSeleccionado(categoria);
+  };
+
+  const manejarClickBoton = (productoId, botonTipo) => {
+    setBotonesPresionados(prevState => ({
+      ...prevState,
+      [productoId]: {
+        ...prevState[productoId],
+        [botonTipo]: !prevState[productoId]?.[botonTipo]
+      }
+    }));
   };
 
   const productosFiltrados = filtrarProductos();
@@ -64,16 +76,22 @@ const Catalogo = ({ agregarAlCarrito, agregarAmegusta }) => {
             <Link to={`/producto/${producto.id}`} className="producto-link">
               <div className="imagen_contenedor">
                 <img src={producto.imagenes[0]} alt={producto.titulo} className="producto_imagen" />
-                <button className="boton_carrito" onClick={(e) => { 
+                <button
+                  className={`boton_carrito ${botonesPresionados[producto.id]?.carrito ? 'presionado' : ''}`}
+                  onClick={(e) => { 
                     e.preventDefault();
-                    agregarAlCarrito(producto); // Asegúrate de usar el nombre correcto del prop
-                }}>
+                    manejarClickBoton(producto.id, 'carrito');
+                    agregarAlCarrito(producto);
+                  }}>
                   <i className="bx bx-cart bx-cart_producto_carrito"></i>
                 </button>
-                <button className="boton_megusta" onClick={(e) => {
+                <button
+                  className={`boton_megusta ${botonesPresionados[producto.id]?.megusta ? 'presionado' : ''}`}
+                  onClick={(e) => {
                     e.preventDefault();
+                    manejarClickBoton(producto.id, 'megusta');
                     agregarAmegusta(producto);
-                }}>
+                  }}>
                   <i className="bx bx-heart bx-cart_producto_corazon"></i>
                 </button>
               </div>

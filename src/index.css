@@ -962,6 +962,30 @@ main {
 }
 
 
+
+.boton_carrito.presionado{
+  color: rgba(255, 255, 0, 0.622); /* Color del ícono o texto cuando se presiona */
+}
+
+
+
+.boton_megusta.presionado {
+  color: #ff69b4a1; /* Cambia este color por el que prefieras */
+  
+}
+
+.boton_carrito,
+.boton_megusta {
+  transition: background-color 0.3s ease;
+}
+
+/* Otros estilos que ya tengas */
+
+
+
+
+
+
 .bx-cart_producto_carrito:hover {
   color: white;
 }
@@ -1568,6 +1592,7 @@ main {
   color: #fff; /* Color del texto */
   background-color: #ff69b4; /* Color de fondo rosa */
   border-radius: 10px;
+  padding: 2rem;
 }
 
 form {
