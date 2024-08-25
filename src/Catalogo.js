@@ -61,11 +61,12 @@ const Catalogo = ({ agregarAlCarrito, agregarAmegusta }) => {
         </div>
       </div>
 
+
       <div className="filtro_contenedor">
         <ul className="filtro_ul">
           <li><button className={`boton_filtro ${seleccionado === 'Todas' ? 'activo' : ''}`} onClick={() => manejarFiltro('Todas')}>Todas</button></li>
-          <li><button className={`boton_filtro ${seleccionado === 'bolsa_mujer' ? 'activo' : ''}`} onClick={() => manejarFiltro('bolsa_mujer')}>Mujeres</button></li>
-          <li><button className={`boton_filtro ${seleccionado === 'bolsa_mano' ? 'activo' : ''}`} onClick={() => manejarFiltro('bolsa_mano')}>Mano</button></li>
+          <li>< button className={`boton_filtro ${seleccionado === 'bolsa_mochila' ? 'activo' : ''}`} onClick={() => manejarFiltro('bolsa_mochila')}>Mochilas</button></li>
+          <li><button className={`boton_filtro ${seleccionado === 'bolsa_nino' ? 'activo' : ''}`} onClick={() => manejarFiltro('bolsa_nino')}>nino</button></li>
           <li><button className={`boton_filtro ${seleccionado === 'bolsas_nina' ? 'activo' : ''}`} onClick={() => manejarFiltro('bolsas_nina')}>Niña</button></li>
         </ul>
       </div>

@@ -228,21 +228,23 @@ import Frontal20Rojo from './imgs/Bolsas-mochilas/Modelo 20 ROJO/Frente.png';
 
 
 export const productosarray = [
+
   {
-    id: "bolsa-01",
+    id: "bolsa-01", /*Se queda asi*/
     titulo: "Modelo 1 AZUL",
     imagenes: [Frontal1Azul, Derecha1Azul, Izquierda1Azul, Atras1Azul],
     color: "blanco",
-    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    categoria: { nombre: "bolsa", id: "bolsa_mochila" },
     precio: "300",
     descripcion: ""
   },
+
   {
     id: "bolsa-02",
     titulo: "Modelo 1 TOMMY",
     imagenes: [Frontal1Tommy, Derecha1Tommy, Izquierda1Tommy, Atras1Tommy],
     color: "blanco",
-    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    categoria: { nombre: "bolsa", id: "bolsa_nino" },
     precio: "350",
     descripcion: ""
   },
@@ -251,7 +253,7 @@ export const productosarray = [
     titulo: "Modelo 1 ROSA",
     imagenes: [Frontal1Rosa, Derecha1Rosa, Izquierda1Rosa, Atras1Rosa],
     color: "blanco",
-    categoria: { nombre: "bolsa", id: "bolsa_mujer" },
+    categoria: { nombre: "bolsa", id: "bolsa_nino" },
     precio: "300",
     descripcion: ""
   },
