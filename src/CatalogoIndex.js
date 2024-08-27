@@ -231,7 +231,7 @@ export const productosarray = [
 
   {
     id: "bolsa-01", /*Se queda asi*/
-    titulo: "Modelo 1 AZUL",
+    titulo: "Prueba 01 Paola",
     imagenes: [Frontal1Azul, Derecha1Azul, Izquierda1Azul, Atras1Azul],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mochila" },
