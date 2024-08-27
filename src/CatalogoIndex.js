@@ -231,21 +231,21 @@ export const productosarray = [
 
   {
     id: "bolsa-01", /*Se queda asi*/
-    titulo: "Prueba 01 Paola",
+    titulo: "Gomory",
     imagenes: [Frontal1Azul, Derecha1Azul, Izquierda1Azul, Atras1Azul],
-    color: "blanco",
+    color: "azul",
     categoria: { nombre: "bolsa", id: "bolsa_mochila" },
-    precio: "2300",
+    precio: "220",
     descripcion: ""
   },
 
   {
-    id: "bolsa-02",
+    id: "Gomory",
     titulo: "Modelo 1 TOMMY",
     imagenes: [Frontal1Tommy, Derecha1Tommy, Izquierda1Tommy, Atras1Tommy],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_nino" },
-    precio: "350",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -254,7 +254,7 @@ export const productosarray = [
     imagenes: [Frontal1Rosa, Derecha1Rosa, Izquierda1Rosa, Atras1Rosa],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_nino" },
-    precio: "300",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -263,7 +263,7 @@ export const productosarray = [
     imagenes: [Frontal2Azul, Derecha2Azul, Izquierda2Azul, Atras2Azul],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "320",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -272,7 +272,7 @@ export const productosarray = [
     imagenes: [Frontal2Cafe, Derecha2Cafe, Izquierda2Cafe, Atras2Cafe],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "330",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -281,7 +281,7 @@ export const productosarray = [
     imagenes: [Frontal2Rosa, Derecha2Rosa, Izquierda2Rosa, Atras2Rosa],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "340",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -290,7 +290,7 @@ export const productosarray = [
     imagenes: [Frontal3Cafe, Derecha3Cafe, Izquierda3Cafe, Atras3Cafe],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "350",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -299,7 +299,7 @@ export const productosarray = [
     imagenes: [Frontal3Lila, Derecha3Lila, Izquierda3Lila, Atras3Lila],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "360",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -308,7 +308,7 @@ export const productosarray = [
     imagenes: [Frontal3Negro, Derecha3Negro, Izquierda3Negro, Atras3Negro],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "370",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -317,7 +317,7 @@ export const productosarray = [
     imagenes: [Frontal3Rosa, Derecha3Rosa, Izquierda3Rosa, Atras3Rosa],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "380",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -326,7 +326,7 @@ export const productosarray = [
     imagenes: [Frontal3Turquesa, Derecha3Turquesa, Izquierda3Turquesa, Atras3Turquesa],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "390",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -335,7 +335,7 @@ export const productosarray = [
     imagenes: [Frontal4Azul, Derecha4Azul, Izquierda4Azul, Atras4Azul],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "400",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -344,7 +344,7 @@ export const productosarray = [
     imagenes: [Frontal4Cafe, Derecha4Cafe, Izquierda4Cafe, Atras4Cafe],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "410",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -353,7 +353,7 @@ export const productosarray = [
     imagenes: [Frontal4Negro, Derecha4Negro, Izquierda4Negro, Atras4Negro],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "420",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -362,7 +362,7 @@ export const productosarray = [
     imagenes: [Frontal5Crema, Derecha5Crema, Izquierda5Crema, Atras5Crema],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "430",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -371,7 +371,7 @@ export const productosarray = [
     imagenes: [Frontal5Negra, Derecha5Negra, Izquierda5Negra, Atras5Negra],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "440",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -380,7 +380,7 @@ export const productosarray = [
     imagenes: [Frontal6Cafe, Derecha6Cafe, Izquierda6Cafe, Atras6Cafe],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "450",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -389,7 +389,7 @@ export const productosarray = [
     imagenes: [Frontal6Roja, Derecha6Roja, Izquierda6Roja, Atras6Roja],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "460",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -398,7 +398,7 @@ export const productosarray = [
     imagenes: [Frontal7Azul, Derecha7Azul, Izquierda7Azul, Atras7Azul],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "470",
+    precio: "220",
     descripcion: ""
   },
 
@@ -408,7 +408,7 @@ export const productosarray = [
     imagenes: [Frontal7Negro, Derecha7Negro, Izquierda7Negro, Atras7Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "480",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -417,7 +417,7 @@ export const productosarray = [
     imagenes: [Frontal8Azul],
     color: "azul",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "500",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -426,7 +426,7 @@ export const productosarray = [
     imagenes: [Frontal8Beige, Derecha8Beige, Izquierda8Beige, Atras8Beige],
     color: "beige",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "520",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -435,7 +435,7 @@ export const productosarray = [
     imagenes: [Frontal8Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "540",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -444,7 +444,7 @@ export const productosarray = [
     imagenes: [Frontal8Rojo],
     color: "rojo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "560",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -453,7 +453,7 @@ export const productosarray = [
     imagenes: [Frontal9Beige, Derecha9Beige, Izquierda9Beige, Atras9Beige],
     color: "beige",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "580",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -462,7 +462,7 @@ export const productosarray = [
     imagenes: [Frontal10Blanco, Derecha10Blanco, Izquierda10Blanco, Atras10Blanco],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "600",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -471,7 +471,7 @@ export const productosarray = [
     imagenes: [Frontal10Negro, Derecha10Negro, Izquierda10Negro, Atras10Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "620",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -480,7 +480,7 @@ export const productosarray = [
     imagenes: [Frontal11Amarillo, Derecha11Amarillo, Izquierda11Amarillo, Atras11Amarillo],
     color: "amarillo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "640",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -489,7 +489,7 @@ export const productosarray = [
     imagenes: [Frontal11Negro, Izquierda11Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "660",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -498,7 +498,7 @@ export const productosarray = [
     imagenes: [Frontal12Rojo, Derecha12Rojo, Izquierda12Rojo, Atras12Rojo],
     color: "rojo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "680",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -507,7 +507,7 @@ export const productosarray = [
     imagenes: [Frontal12Rosa, Derecha12Rosa, Izquierda12Rosa, Atras12Rosa],
     color: "rosa",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "700",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -516,7 +516,7 @@ export const productosarray = [
     imagenes: [Frontal13Rosa, Derecha13Rosa, Izquierda13Rosa, Atras13Rosa],
     color: "rosa",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "720",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -525,7 +525,7 @@ export const productosarray = [
     imagenes: [Frontal13Verde, Derecha13Verde, Izquierda13Verde, Atras13Verde],
     color: "verde",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "740",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -534,7 +534,7 @@ export const productosarray = [
     imagenes: [Frontal14Azul, Derecha14Azul, Izquierda14Azul, Atras14Azul],
     color: "azul",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "760",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -543,7 +543,7 @@ export const productosarray = [
     imagenes: [Frontal14Verde, Derecha14Verde, Izquierda14Verde, Atras14Verde],
     color: "verde",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "780",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -552,7 +552,7 @@ export const productosarray = [
     imagenes: [Frontal15Azul, Derecha15Azul, Izquierda15Azul, Atras15Azul],
     color: "azul",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "800",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -561,7 +561,7 @@ export const productosarray = [
     imagenes: [Frontal15Mostaza, Derecha15Mostaza],
     color: "mostaza",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "820",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -570,7 +570,7 @@ export const productosarray = [
     imagenes: [Frontal15Rojizo, Derecha15Rojizo],
     color: "rojizo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "840",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -579,7 +579,7 @@ export const productosarray = [
     imagenes: [Frontal16Negro, Derecha16Negro, Izquierda16Negro, Atras16Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "860",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -588,7 +588,7 @@ export const productosarray = [
     imagenes: [Frontal16Rosa, Derecha16Rosa],
     color: "rosa",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "880",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -597,7 +597,7 @@ export const productosarray = [
     imagenes: [Frontal17Blanco, Derecha17Blanco, Izquierda17Blanco, Atras17Blanco],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "900",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -606,7 +606,7 @@ export const productosarray = [
     imagenes: [Frontal18Negro, Derecha18Negro, Izquierda18Negro, Atras18Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "920",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -615,7 +615,7 @@ export const productosarray = [
     imagenes: [Frontal19Vino, Derecha19Vino, Izquierda19Vino, Atras19Vino],
     color: "vino",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "940",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -624,7 +624,7 @@ export const productosarray = [
     imagenes: [Frontal20Negro, Derecha20Negro, Izquierda20Negro, Atras20Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "960",
+    precio: "220",
     descripcion: ""
   },
   {
@@ -633,7 +633,7 @@ export const productosarray = [
     imagenes: [Frontal20Rojo, Derecha20Rojo, Izquierda20Rojo, Atras20Rojo],
     color: "rojo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
-    precio: "980",
+    precio: "220",
     descripcion: ""
   }
 
