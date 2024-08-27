@@ -235,7 +235,7 @@ export const productosarray = [
     imagenes: [Frontal1Azul, Derecha1Azul, Izquierda1Azul, Atras1Azul],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mochila" },
-    precio: "300",
+    precio: "2300",
     descripcion: ""
   },
 
