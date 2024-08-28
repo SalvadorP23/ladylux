@@ -231,145 +231,145 @@ export const productosarray = [
 
   {
     id: "bolsa-01", /*Se queda asi*/
-    titulo: "Gomory",
+    titulo: "GOMORY",
     imagenes: [Frontal1Azul, Derecha1Azul, Izquierda1Azul, Atras1Azul],
-    color: "azul",
+    color: "azul marino",
     categoria: { nombre: "bolsa", id: "bolsa_mochila" },
     precio: "220",
     descripcion: ""
   },
 
   {
-    id: "Gomory",
-    titulo: "Modelo 1 TOMMY",
+    id: "bolsa-02",
+    titulo: "GOMORY",
     imagenes: [Frontal1Tommy, Derecha1Tommy, Izquierda1Tommy, Atras1Tommy],
-    color: "blanco",
+    color: "rojo",
     categoria: { nombre: "bolsa", id: "bolsa_nino" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-03",
-    titulo: "Modelo 1 ROSA",
+    titulo: "GOMORY",
     imagenes: [Frontal1Rosa, Derecha1Rosa, Izquierda1Rosa, Atras1Rosa],
-    color: "blanco",
+    color: "rosa",
     categoria: { nombre: "bolsa", id: "bolsa_nino" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-04",
-    titulo: "Modelo 2 AZUL",
+    titulo: "KELLY",
     imagenes: [Frontal2Azul, Derecha2Azul, Izquierda2Azul, Atras2Azul],
-    color: "blanco",
+    color: "azul cielo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-05",
-    titulo: "Modelo 2 CAFÉ",
+    titulo: "KELLY",
     imagenes: [Frontal2Cafe, Derecha2Cafe, Izquierda2Cafe, Atras2Cafe],
-    color: "blanco",
+    color: "café",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-06",
-    titulo: "Modelo 2 ROSA",
+    titulo: "KELLY",
     imagenes: [Frontal2Rosa, Derecha2Rosa, Izquierda2Rosa, Atras2Rosa],
-    color: "blanco",
+    color: "rosa",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-07",
-    titulo: "Modelo 3 CAFÉ",
+    titulo: "SARAHÍ",
     imagenes: [Frontal3Cafe, Derecha3Cafe, Izquierda3Cafe, Atras3Cafe],
-    color: "blanco",
+    color: "café",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-08",
-    titulo: "Modelo 3 LILA",
+    titulo: "SARAHÍ",
     imagenes: [Frontal3Lila, Derecha3Lila, Izquierda3Lila, Atras3Lila],
-    color: "blanco",
+    color: "lila",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-09",
-    titulo: "Modelo 3 NEGRO",
+    titulo: "SARAHÍ",
     imagenes: [Frontal3Negro, Derecha3Negro, Izquierda3Negro, Atras3Negro],
-    color: "blanco",
+    color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-10",
-    titulo: "Modelo 3 ROSA",
+    titulo: "SARAHÍ",
     imagenes: [Frontal3Rosa, Derecha3Rosa, Izquierda3Rosa, Atras3Rosa],
-    color: "blanco",
+    color: "rosa",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-11",
-    titulo: "Modelo 3 TURQUESA",
+    titulo: "SARAHÍ",
     imagenes: [Frontal3Turquesa, Derecha3Turquesa, Izquierda3Turquesa, Atras3Turquesa],
-    color: "blanco",
+    color: "turquesa",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-12",
-    titulo: "Modelo 4 AZUL",
+    titulo: "BETZABETH",
     imagenes: [Frontal4Azul, Derecha4Azul, Izquierda4Azul, Atras4Azul],
-    color: "blanco",
+    color: "azul",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-13",
-    titulo: "Modelo 4 CAFÉ",
+    titulo: "BETZABETH",
     imagenes: [Frontal4Cafe, Derecha4Cafe, Izquierda4Cafe, Atras4Cafe],
-    color: "blanco",
+    color: "café",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-14",
-    titulo: "Modelo 4 NEGRO",
+    titulo: "BETZABETH",
     imagenes: [Frontal4Negro, Derecha4Negro, Izquierda4Negro, Atras4Negro],
-    color: "blanco",
+    color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-15",
-    titulo: "Modelo 5 CREMA",
+    titulo: "ZOE",
     imagenes: [Frontal5Crema, Derecha5Crema, Izquierda5Crema, Atras5Crema],
-    color: "blanco",
+    color: "crema",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
   },
   {
     id: "bolsa-16",
-    titulo: "Modelo 5 NEGRA",
+    titulo: "ZOE",
     imagenes: [Frontal5Negra, Derecha5Negra, Izquierda5Negra, Atras5Negra],
-    color: "blanco",
+    color: "negra",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
@@ -378,7 +378,7 @@ export const productosarray = [
     id: "bolsa-17",
     titulo: "Modelo 6 CAFÉ",
     imagenes: [Frontal6Cafe, Derecha6Cafe, Izquierda6Cafe, Atras6Cafe],
-    color: "blanco",
+    color: "café",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
@@ -387,7 +387,7 @@ export const productosarray = [
     id: "bolsa-18",
     titulo: "Modelo 6 ROJA",
     imagenes: [Frontal6Roja, Derecha6Roja, Izquierda6Roja, Atras6Roja],
-    color: "blanco",
+    color: "roja",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
