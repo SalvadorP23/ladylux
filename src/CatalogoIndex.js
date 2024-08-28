@@ -18,7 +18,7 @@ import Frontal1Rosa from './imgs/Bolsas-mochilas/Modelo 1 ROSA/Frontal.png';
 
 // Importaciones para Modelo 2 AZUL
 import Izquierda2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Izquierda.png';
-import Derecha2Azul from './:\Users\delap\OneDrive\Imágenes/Bolsas/Modelo 2 AZUL/Derecha.png';
+import Derecha2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Derecha.jpg';
 import Atras2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Atrás.png';
 import Frontal2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Frontal.png';
 
@@ -376,7 +376,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-17",
-    titulo: "Modelo 6 CAFÉ",
+    titulo: "MACARIA",
     imagenes: [Frontal6Cafe, Derecha6Cafe, Izquierda6Cafe, Atras6Cafe],
     color: "café",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -385,7 +385,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-18",
-    titulo: "Modelo 6 ROJA",
+    titulo: "MACARIA",
     imagenes: [Frontal6Roja, Derecha6Roja, Izquierda6Roja, Atras6Roja],
     color: "roja",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -394,9 +394,9 @@ export const productosarray = [
   },
   {
     id: "bolsa-19",
-    titulo: "Modelo 7 AZUL",
+    titulo: "MIEL",
     imagenes: [Frontal7Azul, Derecha7Azul, Izquierda7Azul, Atras7Azul],
-    color: "blanco",
+    color: "azul",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
     precio: "220",
     descripcion: ""
@@ -404,7 +404,7 @@ export const productosarray = [
 
   {
     id: "bolsa-20",
-    titulo: "Modelo 7 NEGRO",
+    titulo: "MIEL",
     imagenes: [Frontal7Negro, Derecha7Negro, Izquierda7Negro, Atras7Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -413,7 +413,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-21",
-    titulo: "Modelo 8 AZUL",
+    titulo: "SARAHÍ",
     imagenes: [Frontal8Azul],
     color: "azul",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -422,7 +422,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-22",
-    titulo: "Modelo 8 BEIGE",
+    titulo: "SARAHÍ",
     imagenes: [Frontal8Beige, Derecha8Beige, Izquierda8Beige, Atras8Beige],
     color: "beige",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -431,7 +431,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-23",
-    titulo: "Modelo 8 NEGRO",
+    titulo: "SARAHÍ",
     imagenes: [Frontal8Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -440,7 +440,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-24",
-    titulo: "Modelo 8 ROJO",
+    titulo: "SARAHÍ",
     imagenes: [Frontal8Rojo],
     color: "rojo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -449,7 +449,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-25",
-    titulo: "Modelo 9 BEIGE",
+    titulo: "MARINA",
     imagenes: [Frontal9Beige, Derecha9Beige, Izquierda9Beige, Atras9Beige],
     color: "beige",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -458,7 +458,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-26",
-    titulo: "Modelo 10 BLANCO",
+    titulo: "NATY",
     imagenes: [Frontal10Blanco, Derecha10Blanco, Izquierda10Blanco, Atras10Blanco],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -467,7 +467,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-27",
-    titulo: "Modelo 10 NEGRO",
+    titulo: "NATY",
     imagenes: [Frontal10Negro, Derecha10Negro, Izquierda10Negro, Atras10Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -476,7 +476,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-28",
-    titulo: "Modelo 11 AMARILLO",
+    titulo: "YAMILA",
     imagenes: [Frontal11Amarillo, Derecha11Amarillo, Izquierda11Amarillo, Atras11Amarillo],
     color: "amarillo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -485,7 +485,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-29",
-    titulo: "Modelo 11 NEGRO",
+    titulo: "YAMILA",
     imagenes: [Frontal11Negro, Izquierda11Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -494,7 +494,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-30",
-    titulo: "Modelo 12 ROJO",
+    titulo: "ITZI",
     imagenes: [Frontal12Rojo, Derecha12Rojo, Izquierda12Rojo, Atras12Rojo],
     color: "rojo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -503,7 +503,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-31",
-    titulo: "Modelo 12 ROSA",
+    titulo: "ITZI",
     imagenes: [Frontal12Rosa, Derecha12Rosa, Izquierda12Rosa, Atras12Rosa],
     color: "rosa",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -512,7 +512,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-32",
-    titulo: "Modelo 13 ROSA",
+    titulo: "ANIKA",
     imagenes: [Frontal13Rosa, Derecha13Rosa, Izquierda13Rosa, Atras13Rosa],
     color: "rosa",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -521,7 +521,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-33",
-    titulo: "Modelo 13 VERDE",
+    titulo: "ANIKA",
     imagenes: [Frontal13Verde, Derecha13Verde, Izquierda13Verde, Atras13Verde],
     color: "verde",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -530,7 +530,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-34",
-    titulo: "Modelo 14 AZUL",
+    titulo: "MAYRELI",
     imagenes: [Frontal14Azul, Derecha14Azul, Izquierda14Azul, Atras14Azul],
     color: "azul",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -539,7 +539,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-35",
-    titulo: "Modelo 14 VERDE",
+    titulo: "MAYRELI",
     imagenes: [Frontal14Verde, Derecha14Verde, Izquierda14Verde, Atras14Verde],
     color: "verde",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -548,7 +548,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-36",
-    titulo: "Modelo 15 AZUL",
+    titulo: "INARI",
     imagenes: [Frontal15Azul, Derecha15Azul, Izquierda15Azul, Atras15Azul],
     color: "azul",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -557,7 +557,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-37",
-    titulo: "Modelo 15 MOSTAZA",
+    titulo: "INARI",
     imagenes: [Frontal15Mostaza, Derecha15Mostaza],
     color: "mostaza",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -566,7 +566,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-38",
-    titulo: "Modelo 15 ROJIZO",
+    titulo: "INARI",
     imagenes: [Frontal15Rojizo, Derecha15Rojizo],
     color: "rojizo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -575,7 +575,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-39",
-    titulo: "Modelo 16 NEGRO",
+    titulo: "BORI",
     imagenes: [Frontal16Negro, Derecha16Negro, Izquierda16Negro, Atras16Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -584,7 +584,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-40",
-    titulo: "Modelo 16 ROSA",
+    titulo: "BORI",
     imagenes: [Frontal16Rosa, Derecha16Rosa],
     color: "rosa",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -593,7 +593,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-41",
-    titulo: "Modelo 17 BLANCO",
+    titulo: "XIAHOMI",
     imagenes: [Frontal17Blanco, Derecha17Blanco, Izquierda17Blanco, Atras17Blanco],
     color: "blanco",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -602,7 +602,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-42",
-    titulo: "Modelo 18 NEGRO",
+    titulo: "LUPITA",
     imagenes: [Frontal18Negro, Derecha18Negro, Izquierda18Negro, Atras18Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -611,7 +611,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-43",
-    titulo: "Modelo 19 VINO",
+    titulo: "MAYEL",
     imagenes: [Frontal19Vino, Derecha19Vino, Izquierda19Vino, Atras19Vino],
     color: "vino",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -620,7 +620,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-44",
-    titulo: "Modelo 20 NEGRO",
+    titulo: "YAJANA",
     imagenes: [Frontal20Negro, Derecha20Negro, Izquierda20Negro, Atras20Negro],
     color: "negro",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
@@ -629,7 +629,7 @@ export const productosarray = [
   },
   {
     id: "bolsa-45",
-    titulo: "Modelo 20 ROJO",
+    titulo: "YAJANA",
     imagenes: [Frontal20Rojo, Derecha20Rojo, Izquierda20Rojo, Atras20Rojo],
     color: "rojo",
     categoria: { nombre: "bolsa", id: "bolsa_mujer" },
