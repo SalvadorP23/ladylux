@@ -17,8 +17,8 @@ import Atras1Rosa from './imgs/Bolsas-mochilas/Modelo 1 ROSA/Atrás.png';
 import Frontal1Rosa from './imgs/Bolsas-mochilas/Modelo 1 ROSA/Frontal.png';
 
 // Importaciones para Modelo 2 AZUL
-import Izquierda2Azul from './imgs/Bolsas/Modelo 2 AZUL/Izquierda.png';
-import Derecha2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Derecha.png';
+import Izquierda2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Izquierda.png';
+import Derecha2Azul from './:\Users\delap\OneDrive\Imágenes/Bolsas/Modelo 2 AZUL/Derecha.png';
 import Atras2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Atrás.png';
 import Frontal2Azul from './imgs/Bolsas-mochilas/Modelo 2 AZUL/Frontal.png';
 
